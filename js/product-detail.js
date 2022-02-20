@@ -27,7 +27,7 @@ const renderCarouselProducts = (data) => {
             Giảm ${item.promotion}%
         </div>
         <div class="products__img">
-            <a href="./page/view_detail.html?id=${item.id}">
+            <a href="./view_detail.html?id=${item.id}">
                 <img src=" ${item.imageThumb}" alt="">
             </a>
         </div>
