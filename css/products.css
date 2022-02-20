@@ -481,6 +481,9 @@ body {
   width: 49%;
   padding: 10px;
 }
+.installment__all:hover {
+  color: white;
+}
 .installment__all p:first-child {
   margin-bottom: 5px;
 }
