@@ -631,8 +631,9 @@ body.white {
   align-items: center;
   gap: 10px;
 }
-.banner__menu--left span {
+.banner__menu--left a {
   font-weight: 600;
+  color: black;
 }
 .banner__menu--icon {
   font-size: 22px;
