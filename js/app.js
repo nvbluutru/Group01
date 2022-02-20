@@ -6,7 +6,7 @@ const fomatVnd = (price) => {
 }
 window.addEventListener("DOMContentLoaded", function () {
     const loader = getEle(".lds-wrapper");
-    loader.classList += " active"; // class "loader hidden"
+    loader.classList += " active";
 });
 let headerContent = getEle(".header__content");
 $(window).scroll(() => {
