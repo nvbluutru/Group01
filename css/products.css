@@ -47,7 +47,7 @@ body {
   line-height: 25px;
 }
 .statistical__full p span {
-  font-weight: 800;
+  font-weight: 600;
 }
 .statistical__right__table th {
   border: 1px solid black;
@@ -70,7 +70,7 @@ body {
   color: #3d6610;
 }
 .statistical__right__table__color th {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 14px;
 }
 .statistical__full .color__wirte {
@@ -79,7 +79,7 @@ body {
 
 /* DATA */
 .data span {
-  font-weight: 800;
+  font-weight: 600;
 }
 .data p {
   line-height: 26px;
@@ -125,7 +125,7 @@ body {
   background-color: #f9fafb;
 }
 .askAndAnswer .askAndAnswer__all .font {
-  font-weight: 800;
+  font-weight: 600;
   background-color: #dddddd;
   border: 2px solid #f9fafb;
   width: 30%;
@@ -135,10 +135,10 @@ body {
 }
 .askAndAnswer span {
   color: red;
-  font-weight: 800;
+  font-weight: 600;
 }
 .askAndAnswer .askAndAnswer__all p {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 13px;
 }
 .askAndAnswer .input_second {
@@ -236,7 +236,7 @@ body {
   line-height: 50px;
   margin: 0 10px 0 0;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   align-items: center;
 }
 .body__main {
@@ -463,7 +463,7 @@ body {
 }
 .buying span {
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
   color: white;
 }
 
@@ -612,7 +612,7 @@ body {
   border: 2px solid red;
   color: red;
   background-color: white;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 14px;
   margin-top: 10px;
   transition: all 0.5s;
@@ -824,7 +824,7 @@ body {
   align-items: center;
   background-color: #d70019;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
 }
 .modal-header h5 {
   font-weight: 600;
@@ -881,7 +881,7 @@ body {
 }
 
 .comment .comment__all .font {
-  font-weight: 800;
+  font-weight: 600;
   background-color: #dddddd;
   width: 30%;
   padding: 2px 5px;
@@ -890,10 +890,10 @@ body {
 }
 .comment span {
   color: red;
-  font-weight: 800;
+  font-weight: 600;
 }
 .comment .comment__all p {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 13px;
   margin-bottom: 0;
 }
