@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/compare.css">
+</head>
+
+<body>
+    <div class="lds-wrapper">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container__first">
+            <div class="header__content">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo/logo.svg" alt="logo smart store">
+                </a>
+                <div class="header__location header__bg">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="header__location--select">
+                        <p class="header__distance">Xem giá tại</p>
+                        <p>Chọn địa chỉ <i class="fa fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="header__search--input" placeholder="Bạn cần tìm gì?" id="search-products">
+                    <div class="header__search--result" id="search">
+
+                    </div>
+                </div>
+                <ul class="header__information">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="header__information--desc">
+                            <a href="./contact-us.html">
+                                <p class="header__distance">Thông tin</p>
+                                <p>cửa hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-truck"></i>
+                        <div class="header__information--desc">
+                            <a href="./check-order.html">
+                                <p class="header__distance">Tra cứu</p>
+                                <p>đơn hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="view-cart">
+                        <div class="header__shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="header__shopping--count">0</span>
+                        </div>
+                        <div class="header__information--desc">
+                            <p class="header__distance">Giỏ</p>
+                            <p>hàng</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./smember.html" class="header__user header__bg">
+                    <i class="fa fa-user-circle"></i>
+                    <p>Smember</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- The members will write the code below this -->
+    <div class="backpage">
+        <div class="container__first">
+            <div class="backpage__content">
+                <i class="fa fa-home backpage__icon--home"></i>
+                <a href="#">Trang chủ</a>
+                <span><i class="fa fa-angle-right"></i></span>
+                <span>So sánh sản phẩm</span>
+            </div>
+        </div>
+    </div>
+    <div class="compare">
+        <div class="container__first">
+            <div class="compare__content">
+                <div class="heading center-flex">
+                    <h3 class="heading__left">Điện thoại nổi bật nhất</h3>
+                </div>
+                <div class="compare__body">
+                    <div class="compare__item">
+                        <div class="compare__search">
+                            <i class="fa fa-search"></i>
+                            <input type="search" class="compare__search--input">
+                        </div>
+                        <div class="compare__products--img">
+                            <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                        </div>
+                        <div class="compare__desc">
+                            <div class="compare__price">Chỉ từ <span>7.790.000đ</span></div>
+                            <div class="compare__promotion">
+                                <i class="fa fa-gift"></i>
+                                Nhận đến 2 khuyến mãi
+                            </div>
+                            <div class="compare__list--img">
+                                <div class="compare__item"></div>
+                                <div class="compare__item"></div>
+                                <div class="compare__item"></div>
+                            </div>
+                            <a href="#" class="compare__detail">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="compare__line">
+                        <span>VS</span>
+                    </div>
+                    <div class="compare__item">
+                        <div class="compare__search">
+                            <i class="fa fa-search"></i>
+                            <input type="search" class="compare__search--input">
+                        </div>
+                        <div class="compare__suggest">
+                            <div class="compare__suggest--item">
+                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <div class="compare__suggest--name">Iphone 13</div>
+                            </div>
+                            <div class="compare__suggest--item">
+                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <div class="compare__suggest--name">Iphone 13</div>
+                            </div>
+                            <div class="compare__suggest--item">
+                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <div class="compare__suggest--name">Iphone 13</div>
+                            </div>
+                            <div class="compare__suggest--item">
+                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <div class="compare__suggest--name">Iphone 13</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Code -->
+    <div class="contact">
+        <div class="contact__item contact__toggle"><i class="fas fa-angle-double-right"></i></div>
+        <div class="contact__item"><i class="fas fa-phone"></i></div>
+        <div class="contact__item"><i class="fab fa-facebook-messenger"></i></div>
+        <div class="contact__item"><i class="fa fa-map-marker-alt"></i></div>
+    </div>
+    <div class="falling-container" aria-hidden="true">
+        <div class="falling-item">
+            ●
+        </div>
+        <div class="falling-item">
+            ●
+        </div>
+        <div class="falling-item">
+            ●
+        </div>
+        <div class="falling-item">
+            ●
+        </div>
+        <div class="falling-item">
+            ●
+        </div>
+        <div class="falling-item">
+            ●
+        </div>
+    </div>
+    <div class="logo__left">
+        <img src="../images/logo/tet_left.png" alt="">
+    </div>
+    .<div class="logo__right">
+        <img src="../images/logo/tet_right.png" alt="">
+    </div>
+    <div class="shopping">
+        <div class="shopping__black"></div>
+        <div class="shopping__view">
+            <div class="shopping__top">
+                <span>Giỏ Hàng</span>
+                <i class="fa fa-times" id="closeCart"></i>
+            </div>
+            <div class="shopping__body">
+                <div class="shopping__products">
+                </div>
+                <div class="shopping__total">Tổng số tiền: <span>0đ</span></div>
+                <a href="./order-products.html" class="shopping__payment">Thanh Toán</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container__first">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h3 class="footer__title">Tìm cửa hàng</h3>
+                    <p><a href="#">Tìm cửa hàng gần nhất</a></p>
+                    <p><a href="#">Mua hàng từ xa</a></p>
+                    <p><a href="#" class="footer__color--red">Gặp trực tiếp cửa hàng gần nhất (Zalo hoặc gọi điện)</a>
+                    </p>
+                    <h3 class="footer__title">Phương thức thanh toán</h3>
+                    <div class="footer__payment">
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                        </div>
+                        <h3 class="footer__title">Đối tác dịch vụ bảo hành</h3>
+                        <p>Điện thoại - Máy tính</p>
+                        <div class="footer__insurance"></div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Mua hàng và thanh toán Online</a></p>
+                            <p><a href="#">Mua hàng trả góp Online</a></p>
+                            <p><a href="#">Tra thông tin đơn hàng</a></p>
+                            <p><a href="#">Tra điểm Smember</a></p>
+                            <p><a href="#">Tra thông tin bảo hành</a></p>
+                            <p><a href="./invoiceLookup.html">Tra cứu hoá đơn điện tử</a></p>
+                            <p><a href="#">Trung tâm bảo hành chính hãng</a></p>
+                            <p><a href="#">Quy định về việc sao lưu dữ liệu</a></p>
+                            <p><a href="#">Dịch vụ bảo hành điện thoại</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Quy chế hoạt động</a></p>
+                            <p><a href="./invoiceLookup.html">Chính sách Bảo hành</a></p>
+                            <p><a href="#">Liên hệ hợp tác kinh doanh</a></p>
+                            <p><a href="#">Đơn Doanh nghiệp</a></p>
+                            <p><a href="#">Ưu đãi từ đối tác</a></p>
+                            <p><a href="#">Tuyển dụng</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Công ty TNHH Thương mại và dịch vụ kỹ thuật DIỆU PHÚC - GPĐKKD: 0316172372 do sở KH & ĐT TP. HCM cấp
+                ngày 02/03/2020. Địa chỉ: 350-352 Võ Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam.
+                Điện thoại: 028.7108.9666.
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+</body>
+
+</html>

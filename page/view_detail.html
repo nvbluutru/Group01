@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Detail</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="white">
+    <div class="lds-wrapper">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container__first">
+            <div class="header__content">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo/logo.svg" alt="logo smart store">
+                </a>
+                <div class="header__location header__bg">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="header__location--select">
+                        <p class="header__distance">Xem giá tại</p>
+                        <p>Chọn địa chỉ <i class="fa fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="header__search--input" placeholder="Bạn cần tìm gì?" id="search-products">
+                    <div class="header__search--result" id="search">
+
+                    </div>
+                </div>
+                <ul class="header__information">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="header__information--desc">
+                            <a href="./contact-us.html">
+                                <p class="header__distance">Thông tin</p>
+                                <p>cửa hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-truck"></i>
+                        <div class="header__information--desc">
+                            <a href="./check-order.html">
+                                <p class="header__distance">Tra cứu</p>
+                                <p>đơn hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="view-cart">
+                        <div class="header__shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="header__shopping--count">0</span>
+                        </div>
+                        <div class="header__information--desc">
+                            <p class="header__distance">Giỏ</p>
+                            <p>hàng</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./smember.html" class="header__user header__bg">
+                    <i class="fa fa-user-circle"></i>
+                    <p>Smember</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- The members will write the code below this -->
+    <div class="backpage">
+        <div class="container__first">
+            <div class="backpage__content">
+                <i class="fa fa-home backpage__icon--home"></i>
+                <a href="#">Trang chủ</a>
+                <span><i class="fa fa-angle-right"></i></span>
+                <span>Tủ quần áo</span>
+                <span><i class="fa fa-angle-right"></i></span>
+                <span id="render-name"></span>
+            </div>
+        </div>
+    </div>
+
+    <section class="body__main">
+        <div class="container__first">
+
+            <div class="body__main__top">
+                <div class="body__main__header__two">
+                    <h1><span id="render-name"></span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h1>
+                </div>
+                <div class="body__main__header__two__right">
+                    <button><i class="fa fa-thumbs-up"></i> thích</button>
+                    <button><i class="fa fa-share"></i> chia sẻ</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="detail__product">
+
+        <div class="container__first">
+
+            <div class="setting__detail">
+                <div class="detail__product__left">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" id="render-img">
+
+                        </div>
+                        <ol class="carousel-indicators" id="render-small">
+
+                        </ol>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail__product__center">
+
+
+                    <div class="number">
+                        <div class="number__left">
+                            <p class="number33" id="new-price">33.000.000 đ</p>
+                            <p class="number37" id="old-price"><del>37.990.000 đ</del></p>
+                        </div>
+                        <div class="detail__product__center__top">
+                            Trả Góp 0%
+                        </div>
+                    </div>
+
+                    <div class="letter__p">
+                        <p>Chọn màu để xem giá và chi nhánh có hàng</p>
+                    </div>
+
+                    <div class="price">
+
+                        <div class="price__setting">
+
+                        </div>
+
+                    </div>
+
+                    <div class="gift">
+                        <p><span><i class="fa fa-gift"></i> Khuyến mãi</span></p>
+                    </div>
+                    <div class="gift__one">
+                        <ul style="margin-top: 20px; list-style-type: none; font-size: 90%; display: inline;">
+                            <li>➀ <span><strong>Giảm ngay 5%</strong></span> khi thanh toán
+                                chuyển khoản trước</li>
+                            <li>➁ <span><strong>Nhận quà</strong></span> ngay cho đơn hàng trên
+                                600K</li>
+                            <li>➂ <span><strong>Freeship</strong></span> mọi đơn hàng nội thành
+                                HCM</li>
+                        </ul>
+                    </div>
+                    <a href="./order-products.html">
+                        <div class="buying" data-id="">
+                            <p><span>MUA NGAY</span></p>
+                            <p>(Giao tận nơi hoặc lấy lại cửa hàng)</p>
+                        </div>
+                    </a>
+                    <div class="installment">
+                        <a href="./installment.html" class="installment__all">
+                            <p><span>TRẢ GÓP 0%</span></p>
+                            <p>(Xét duyệt qua điện thoại)</p>
+                        </a>
+                        <a href="./installment.html" class="installment__all">
+                            <p><span>TRẢ GÓP QUA THẺ</span></p>
+                            <p>(Visa, Master Card, JCB)</p>
+                        </a>
+                    </div>
+
+                    <div class="check">
+                        <p><span>ƯU ĐÃI THÊM</span></p>
+                        <p class="check__bottom"><i class="fa fa-check"></i> Giảm thêm tới 1% cho thành viên Smember (áp
+                            dụng tuỳ sản phẩm)</p>
+                    </div>
+                </div>
+
+                <div class="detail__product__right">
+
+                    <div class="detail__product__right__top">
+                        <select class="detail__product__right__top__left">
+                            <option value="">Tỉnh / Thành</option>
+                            <option value="">Hồ Chí Minh</option>
+                            <option value="">Bình Dương</option>
+                            <option value="">Vũng Tàu</option>
+                        </select>
+                        <select class="detail__product__right__top__right">
+                            <option value="">Quận / Huyện</option>
+                            <option value="">Bình Tân</option>
+                            <option value="">Bình Thạnh</option>
+                            <option value="">Gò Vấp</option>
+                            <option value="">Hóc Môn</option>
+                            <option value="">Phú Nhuận</option>
+                            <option value="">Quận 1</option>
+                            <option value="">Quận 2</option>
+                            <option value="">Quận 3</option>
+                            <option value="">Quận 4</option>
+                            <option value="">Quận 5</option>
+                            <option value="">Quận 6</option>
+                            <option value="">Quận 7</option>
+                            <option value="">Quận 8</option>
+                            <option value="">Quận 9</option>
+                            <option value="">Quận Tân Bình</option>
+                            <option value="">Quận Tân Phú</option>
+                            <option value="">Quận Thủ Đúc</option>
+                            <option value="">Thị Xã Dĩ An</option>
+                            <option value="">Thành Phố Vũng Tàu</option>
+                        </select>
+                    </div>
+
+                    <div class="detail__product__right__center">
+                        <p class="intro">Có<span> 24</span> cửa hàng sản phẩm</p>
+                        <div class="address">
+                            <p><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10, Quận Gò Vấp
+                            </p>
+                            <p class="color"><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10,
+                                Quận Gò Vấp</p>
+                            <p><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10, Quận Gò Vấp
+                            </p>
+                            <p class="color"><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10,
+                                Quận Gò Vấp</p>
+                            <p><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10, Quận Gò Vấp
+                            </p>
+                            <p class="color"><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10,
+                                Quận Gò Vấp</p>
+                            <p><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10, Quận Gò Vấp
+                            </p>
+                            <p class="color"><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10,
+                                Quận Gò Vấp</p>
+                            <p><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10, Quận Gò Vấp
+                            </p>
+                            <p class="color"><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10,
+                                Quận Gò Vấp</p>
+                            <p><span><i class="fa fa-phone"></i> 123456789</span> | 59 Quang Trung, P.10, Quận Gò Vấp
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container__first">
+        <section class="recommended__products">
+
+            <div class="recommended__products__accessory">
+
+                <h5>Sản Phẩm Tương Tự</h5>
+                <div class="owl-carousel owl-theme" id="render-products">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container__first">
+        <section class="information">
+            <div class="parameter">
+                <div class="parameter__all">
+                    <div class="parameter__top">
+                        <h4>Đặc Điểm Nổi Bậc</h4>
+                        <ul id="render-highlight">
+
+                        </ul>
+                    </div>
+
+                    <div class="parameter__bottom" id="render-desc">
+                    </div>
+                </div>
+
+                <div class="comment__all">
+                    <h6>Đánh giá & nhận xét - <span id="render-name"></span></h6>
+
+                    <div class="evaluate__all">
+                        <div class="evaluate__left">
+                            <h4>4.8/5</h4>
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            <p><span>8</span> đánh giá & nhận xét</p>
+                        </div>
+
+                        <div class="evaluate__right">
+
+                            <div class="evaluate__right__all">
+                                <div class="evaluate__right__left">
+                                    <p><span>5</span> <i class="fa fa-star"></i> </p>
+                                </div>
+                                <div class="evaluate__right__center">
+                                    <p>
+                                    <div class="evaluate__right__center__ratio one"></div>
+                                    </p>
+                                </div>
+                                <div class="evaluate__right__right">
+                                    <p>5 đánh giá</p>
+                                </div>
+                            </div>
+                            <div class="evaluate__right__all">
+                                <div class="evaluate__right__left">
+                                    <p><span>5</span> <i class="fa fa-star"></i> </p>
+                                </div>
+                                <div class="evaluate__right__center">
+                                    <p>
+                                    <div class="evaluate__right__center__ratio two"></div>
+                                    </p>
+                                </div>
+                                <div class="evaluate__right__right">
+                                    <p>5 đánh giá</p>
+                                </div>
+                            </div>
+                            <div class="evaluate__right__all">
+                                <div class="evaluate__right__left">
+                                    <p><span>5</span> <i class="fa fa-star"></i> </p>
+                                </div>
+                                <div class="evaluate__right__center">
+                                    <p>
+                                    <div class="evaluate__right__center__ratio three"></div>
+                                    </p>
+                                </div>
+                                <div class="evaluate__right__right">
+                                    <p>5 đánh giá</p>
+                                </div>
+                            </div>
+                            <div class="evaluate__right__all">
+                                <div class="evaluate__right__left">
+                                    <p><span>5</span> <i class="fa fa-star"></i> </p>
+                                </div>
+                                <div class="evaluate__right__center">
+                                    <p>
+                                    <div class="evaluate__right__center__ratio four"></div>
+                                    </p>
+                                </div>
+                                <div class="evaluate__right__right">
+                                    <p>5 đánh giá</p>
+                                </div>
+                            </div>
+                            <div class="evaluate__right__all">
+                                <div class="evaluate__right__left">
+                                    <p><span>5</span> <i class="fa fa-star"></i> </p>
+                                </div>
+                                <div class="evaluate__right__center">
+                                    <p>
+                                    <div class="evaluate__right__center__ratio five"></div>
+                                    </p>
+                                </div>
+                                <div class="evaluate__right__right">
+                                    <p>5 đánh giá</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="evaluate">
+                        <p>Bạn đánh giá sao về sản phẩm này ?</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#evaluate">
+                            Đánh giá ngay
+                        </button>
+                    </div>
+
+                    <div class="comment" id="render-comment">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="characteristic">
+                <h5>Thông Số Kỹ Thuật</h5>
+
+                <table class="table characteristic__text">
+                    <tr>
+                        <th>Kích thướt</th>
+                        <td id="render-size"></td>
+                    </tr>
+                    <tr>
+                        <th>Khối lượng</th>
+                        <td id="render-mass"></td>
+                    </tr>
+                    <tr>
+                        <th>Tải trọng, chịu lực </th>
+                        <td id="render-loadBearing"></td>
+                    </tr>
+                    <tr>
+                        <th>Chất liệu</th>
+                        <td id="render-material"></td>
+                    </tr>
+                    <tr>
+                        <th>Kèm theo</th>
+                        <td id="render-attach"></td>
+                    </tr>
+                </table>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                    Xem cấu hình chi tiết <i class="fa fa-angle-down"></i>
+                </button>
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Thông số chi tiết</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table characteristic__text">
+                        <tr>
+                            <th>Kích thướt</th>
+                            <td id="render-size"></td>
+                        </tr>
+                        <tr>
+                            <th>Khối lượng</th>
+                            <td id="render-mass"></td>
+                        </tr>
+                        <tr>
+                            <th>Tải trọng, chịu lực </th>
+                            <td id="render-loadBearing"></td>
+                        </tr>
+                        <tr>
+                            <th>Chất liệu</th>
+                            <td id="render-material"></td>
+                        </tr>
+                        <tr>
+                            <th>Kèm theo</th>
+                            <td id="render-attach"></td>
+                        </tr>
+                        <tr>
+                            <th>TP. Hồ Chí Minh</th>
+                            <td id="render-sameProvince"></td>
+                        </tr>
+                        <tr>
+                            <th>Tỉnh khác</th>
+                            <td id="render-otherProvince"></td>
+                        </tr>
+                        <tr>
+                            <th>Thời gian bảo hành</th>
+                            <td id="render-time"></td>
+                        </tr>
+                        <tr>
+                            <th>Chứng từ bảo hành</th>
+                            <td id="render-warrantyVoucher"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="evaluate" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Đánh giá & nhận xét sản phẩm </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p><input type="input" placeholder="Họ và Tên"></p>
+                    <p><input type="input" placeholder="Số Điện Thoại"></p>
+                    <div class="modal__image">
+                        <p><input type="input" placeholder="Hình ảnh thực tế"></p>
+                        <p> <i class="fa fa-folder-open"></i> thêm ảnh</p>
+                    </div>
+                    <p> <textarea type="input" placeholder="Xin mời chia sẻ một số cảm nhận về sản phẩm"></textarea></p>
+                    <div class="modal-body__form">
+                        <p><input type="input" placeholder="Bạn cảm thấy sản phẩm như thế nào ?"></p>
+                        <div class="modal-body__form__row">
+                            <div class="modal-body__form__star">
+                                <i class="fa fa-star"></i>
+                                <p>Rất tệ</p>
+                            </div>
+                            <div class="modal-body__form__star">
+                                <i class="fa fa-star"></i>
+                                <p>Tệ</p>
+                            </div>
+                            <div class="modal-body__form__star">
+                                <i class="fa fa-star"></i>
+                                <p>Bình Thường</p>
+                            </div>
+                            <div class="modal-body__form__star">
+                                <i class="fa fa-star"></i>
+                                <p>Tốt</p>
+                            </div>
+                            <div class="modal-body__form__star">
+                                <i class="fa fa-star end"></i>
+                                <p>Rất tốt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Code -->
+
+    <div class="shopping">
+        <div class="shopping__black"></div>
+        <div class="shopping__view">
+            <div class="shopping__top">
+                <span>Giỏ Hàng</span>
+                <i class="fa fa-times" id="closeCart"></i>
+            </div>
+            <div class="shopping__body">
+                <div class="shopping__products">
+                </div>
+                <div class="shopping__total">Tổng số tiền: <span>0đ</span></div>
+                <a href="./order-products.html" class="shopping__payment">Thanh Toán</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container__first">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h3 class="footer__title">Tìm cửa hàng</h3>
+                    <p><a href="#">Tìm cửa hàng gần nhất</a></p>
+                    <p><a href="#">Mua hàng từ xa</a></p>
+                    <p><a href="#" class="footer__color--red">Gặp trực tiếp cửa hàng gần nhất (Zalo hoặc gọi điện)</a>
+                    </p>
+                    <h3 class="footer__title">Phương thức thanh toán</h3>
+                    <div class="footer__payment">
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                        </div>
+                        <h3 class="footer__title">Đối tác dịch vụ bảo hành</h3>
+                        <p>Điện thoại - Máy tính</p>
+                        <div class="footer__insurance"></div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Mua hàng và thanh toán Online</a></p>
+                            <p><a href="#">Mua hàng trả góp Online</a></p>
+                            <p><a href="#">Tra thông tin đơn hàng</a></p>
+                            <p><a href="#">Tra điểm Smember</a></p>
+                            <p><a href="#">Tra thông tin bảo hành</a></p>
+                            <p><a href="./invoiceLookup.html">Tra cứu hoá đơn điện tử</a></p>
+                            <p><a href="#">Trung tâm bảo hành chính hãng</a></p>
+                            <p><a href="#">Quy định về việc sao lưu dữ liệu</a></p>
+                            <p><a href="#">Dịch vụ bảo hành điện thoại</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Quy chế hoạt động</a></p>
+                            <p><a href="./invoiceLookup.html">Chính sách Bảo hành</a></p>
+                            <p><a href="#">Liên hệ hợp tác kinh doanh</a></p>
+                            <p><a href="#">Đơn Doanh nghiệp</a></p>
+                            <p><a href="#">Ưu đãi từ đối tác</a></p>
+                            <p><a href="#">Tuyển dụng</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Công ty TNHH Thương mại và dịch vụ kỹ thuật DIỆU PHÚC - GPĐKKD: 0316172372 do sở KH & ĐT TP. HCM cấp
+                ngày 02/03/2020. Địa chỉ: 350-352 Võ Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam.
+                Điện thoại: 028.7108.9666.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+    <script src="../js/product-detail.js"></script>
+</body>
+
+</html>

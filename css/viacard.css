@@ -1,0 +1,579 @@
+section {
+  width: 55%;
+  margin: 7% auto;
+}
+
+.viacard_top {
+  margin-top: 10%;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 15%);
+}
+.viacard_top_1 {
+  padding: 20px 15px 15px;
+  display: inline-flex;
+}
+.viacard_top_name {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+  color: #000;
+}
+.viacard_top_name:hover {
+  text-decoration-line: underline;
+}
+.price {
+  color: #e11b1e;
+}
+.viacard_top_2 {
+  padding: 20px 15px 15px;
+}
+.viacard_link {
+  color: #d70018;
+}
+.viacard_link:hover {
+  color: #d70018;
+  text-decoration-line: underline;
+}
+li {
+  margin-left: 15px;
+  margin-top: 8px;
+}
+strong {
+  font-weight: bold;
+  font-size: 13px;
+  color: #444444;
+}
+h6 {
+  margin-top: 8px;
+}
+.viacard_mid {
+  padding: 20px 15px 15px;
+  margin-top: 2%;
+  width: 100%;
+  background: #fbfbfb;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 15%);
+}
+.viacard_mid_version1 {
+  padding: 20px 15px 15px;
+  margin-top: 2%;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 15%);
+}
+.viacard_mid_version1 .nav-tabs {
+  flex-wrap: nowrap;
+}
+.viacard_mid_version1 .nav-item {
+  flex-basis: 50%;
+}
+.viacard__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.viacard_mid_version1 .nav-tabs .nav-link,
+.viacard_mid_version1 .nav-tabs {
+  border: none;
+}
+.viacard_mid_version1 .nav-tabs .nav-link {
+  padding: 15px 10px;
+  opacity: 0.5;
+  color: black;
+  border: 1px solid #eeeeee;
+}
+.viacard_mid_version1 .nav-tabs .nav-link.active {
+  border-left: 5px solid #e11b1d;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  opacity: 1;
+}
+.viacard_mid_version1 .nav-tabs .nav-link.active .viacard__item i {
+  color: #e11b1d;
+}
+.viacard__item p {
+  margin-bottom: 0;
+  color: black;
+  font-size: 13px;
+}
+.viacard__item i {
+  font-size: 30px;
+}
+
+.viacard__item p:first-child {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.type__logo {
+  display: flex;
+  gap: 20px;
+}
+.viacard_mid .logos {
+  display: block;
+  width: 150px;
+  border: 1px solid #eeeeee;
+  height: 50px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos img {
+  display: block;
+  width: 50px;
+}
+.viacard_mid li {
+  list-style: none;
+  display: inline;
+}
+
+.viacard_mid span {
+  background-color: #999;
+  width: 100%;
+  display: inline-flex;
+  font-size: 12px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.viacard__bottom select {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding: 3px;
+}
+.viacard__bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.viacard__bottom div {
+  width: 49%;
+}
+.listbank {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.listbank li {
+  display: inline-block;
+  width: 138px;
+  padding: 3px;
+  border: 1px solid #eeeeee;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  height: 50px;
+  line-height: 35px;
+  box-sizing: border-box;
+}
+.cart label {
+  display: inline-block;
+  width: 100%;
+}
+#instBank input,
+.listcard input {
+  display: none;
+}
+.cart input[type="radio"] {
+  margin-bottom: 5px;
+}
+i.iconBank-VPBANK {
+  background-position: 8px -251px;
+  width: 110px;
+  height: 27px;
+  margin: 5px 0 0 15px;
+}
+i.iconBank-SACOMBANK {
+  background-position: 8px -92px;
+  width: 110px;
+  height: 27px;
+}
+i.iconBank-TECHCOMBANK {
+  background-position: 8px -274px;
+  width: 110px;
+  height: 22px;
+}
+i.iconBank-VIETINBANK {
+  background-position: 8px -296px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-ANZ {
+  background-position: 8px -322px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 20px;
+}
+i.iconBank-VPBANK {
+  background-position: 8px -251px;
+  width: 110px;
+  height: 27px;
+  margin: 5px 0 0 15px;
+}
+i.iconBank-SHINHANBANK {
+  background-position: 8px -202px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-EXIMBANK {
+  background-position: 8px -175px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-MARITIMEBANK {
+  background-position: 8px -147px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-VIB {
+  background-position: 8px -120px;
+  width: 110px;
+  height: 27px;
+  margin: 5px 0 0 30px;
+}
+i.iconBank-HSBC {
+  background-position: 8px -229px;
+  width: 110px;
+  height: 27px;
+  margin: 5px 0 0 28px;
+}
+i.iconBank-CTB {
+  background-position: 8px -67px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 20px;
+}
+i.iconBank-SEABANK {
+  background-position: 8px -39px;
+  width: 110px;
+  height: 27px;
+}
+i.iconBank-SC {
+  background-position: 8px -349px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 25px;
+}
+i.iconBank-TPB {
+  background-position: 8px -377px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 20px;
+}
+i.iconBank-SCB {
+  background-position: 15px -434px;
+  width: 110px;
+  height: 27px;
+}
+i.iconBank-FE {
+  background-position: 8px -466px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-OCB {
+  background-position: 8px -522px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-NAB {
+  background-position: 8px -494px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-KLB {
+  background-position: 15px -561px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-BIDV {
+  background-position: 15px -606px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-SHB {
+  background-position: 15px -644px;
+  width: 110px;
+  height: 27px;
+  margin: 0 0 0 15px;
+}
+i.iconBank-VCB {
+  background-position: 15px -680px;
+  width: 110px;
+  height: 27px;
+  margin: 0;
+}
+i.iconBank-ACB {
+  background-position: -170px -85px;
+  width: 110px;
+  height: 27px;
+  margin: 0;
+}
+i.iconBank-MB {
+  background-position: -92px -85px;
+  width: 110px;
+  height: 27px;
+  margin: 0;
+}
+i.iconBank-HOMECREDIT {
+  background-position: -113px -42px;
+  width: 100%;
+  height: 21px;
+  margin: 0;
+}
+[class^="iconBank-"],
+[class*="iconBank-"],
+[class^="iconcard-"],
+[class*="iconcard-"] {
+  background-image: url("../images/payment/icon_bank.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.infor__cost table {
+  width: 100%;
+  font-size: 13px;
+}
+.infor__cost table td {
+  padding: 10px 0 10px 2%;
+}
+table,
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+.infor__bold {
+  font-weight: bold;
+  width: 58%;
+}
+.infor__cost {
+  margin-top: 12px;
+}
+.form-row {
+  margin-left: auto;
+}
+.form-row1 {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.form-row input {
+  padding: 3px;
+  border: solid 1px #eee;
+  background: #fff;
+  height: 30px;
+}
+h5 {
+  margin-top: 12px;
+  font-size: 19px;
+}
+.form-row div {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.note {
+  font-size: 15px;
+  color: #d70018;
+  font-size: 13px;
+}
+.note:hover {
+  color: #d70018;
+  text-decoration-line: underline;
+}
+.button__buy {
+  margin-top: 14px;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 5px;
+  line-height: 18px;
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: solid 1px #e11b1e;
+  background: linear-gradient(#f52f32, #e11b1e);
+  font-weight: bold;
+}
+.button__buy:hover {
+  color: #e11b1e;
+  background: white;
+}
+.button__buybottom {
+  display: flex;
+  color: #999;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 5%;
+}
+.button__buybottom:hover {
+  text-decoration-line: underline;
+  color: rgb(199, 194, 194);
+}
+.viacard_mid {
+  padding: 20px 15px 15px;
+  margin-top: 2%;
+  width: 100%;
+  background: #fbfbfb;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 15%);
+}
+.viacard_mid_version1 {
+  padding: 20px 15px 15px;
+  margin-top: 2%;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 9px 0 rgb(0 0 0 / 15%);
+}
+
+.logos {
+  display: inline-block;
+  width: 120px;
+  padding: 3px;
+  border: 1px solid #eeeeee;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  height: 65px;
+  line-height: 35px;
+  box-sizing: border-box;
+}
+
+.viacard_mid_1 {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  color: #cccccc;
+}
+.viacard_mid_1_1 {
+  width: 50%;
+  display: flex;
+  padding: 10px;
+  border: solid 1px #eeeeee;
+}
+.viacard_mid_1_2 {
+  width: 50%;
+  display: flex;
+  padding: 10px;
+  border: solid 1px #eeeeee;
+}
+.viacard_mid_1 i {
+  font-size: 40px;
+}
+.viacard_mid_1_1a {
+  margin-left: 10px;
+}
+.viacard_mid_1_1a_title {
+  font-weight: 700;
+}
+.viacard_mid_1_1:hover {
+  color: #d70018;
+}
+.viacard_mid_1_2:hover {
+  color: #d70018;
+}
+.viacard_mid span {
+  background-color: #eee;
+  width: 100%;
+  display: inline-flex;
+  font-size: 12px;
+  color: #000;
+  padding: 5px 10px 5px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.infor_card ul {
+  display: flex;
+}
+b {
+  font-family: 700;
+}
+.infor_card ul li {
+  list-style: none;
+  background-color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+table {
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1;
+  font-size: 13px;
+}
+table tr td {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 12px 5px;
+}
+.table1 {
+  background-color: white;
+}
+.table2 td {
+  background-color: #fff4de;
+  border: none;
+  border-right: 1px solid #ddd;
+}
+.table1_1 td {
+  border-bottom: none;
+}
+.table1 select {
+  margin-left: 10px;
+  vertical-align: middle;
+  border: 1px solid #d70018;
+  border-radius: 2px;
+  color: #d70018;
+  padding: 8px 5px 8px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 80px;
+}
+table b {
+  font-size: 12px;
+}
+table td {
+  width: 33.33%;
+}
+.table_logo {
+  float: left;
+  overflow: hidden;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 25px;
+  background-color: #d70018;
+  margin-left: 5px;
+  width: 90%;
+  text-align: center;
+}
+.table_logo:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.table2 i {
+  color: #d70018;
+  margin-right: 3px;
+}
+.infor_card ul a {
+  color: black;
+}

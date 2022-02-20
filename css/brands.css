@@ -1,0 +1,16 @@
+.brands {
+  margin-top: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.brands__content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+.brands__item {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}

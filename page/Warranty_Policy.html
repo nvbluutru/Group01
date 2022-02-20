@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Warranty Policy</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+    <div class="lds-wrapper">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container__first">
+            <div class="header__content">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo/logo.svg" alt="logo smart store">
+                </a>
+                <div class="header__location header__bg">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="header__location--select">
+                        <p class="header__distance">Xem giá tại</p>
+                        <p>Chọn địa chỉ <i class="fa fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="header__search--input" placeholder="Bạn cần tìm gì?" id="search-products">
+                    <div class="header__search--result" id="search">
+
+                    </div>
+                </div>
+                <ul class="header__information">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="header__information--desc">
+                            <a href="./contact-us.html">
+                                <p class="header__distance">Thông tin</p>
+                                <p>cửa hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-truck"></i>
+                        <div class="header__information--desc">
+                            <a href="./check-order.html">
+                                <p class="header__distance">Tra cứu</p>
+                                <p>đơn hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="view-cart">
+                        <div class="header__shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="header__shopping--count">0</span>
+                        </div>
+                        <div class="header__information--desc">
+                            <p class="header__distance">Giỏ</p>
+                            <p>hàng</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./smember.html" class="header__user header__bg">
+                    <i class="fa fa-user-circle"></i>
+                    <p>Smember</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- The members will write the code below this -->
+
+    <section class="policy__header">
+        <div class="container__first">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span><i class="fa fa-home"></i></span> Smart Storev
+                    </a>
+                    <i class="fa fa-angle-right logo__right"></i>
+                </li>
+                <li><a href="./Warranty_Policy.html">Warranty</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container__first">
+        <div class="policy__main__intro">
+            <p>Chào mừng quý khách !</p>
+            <p>Dưới đây là chi tiết thông tin bảo hành các sản phẩm. <a href="#">CellphoneS</a> luôn nỗ lực để Quý khách
+                hài lòng và tin tưởng khi mua hàng</p>
+            <p>Chân thành cảm ơn và mong được phục vụ Quý khách !</p>
+        </div>
+
+        <div class="statistical__full">
+            <h2>CHÍNH SÁCH BẢO HÀNH</h2>
+            <div class="statistical">
+                <ul class="statistical__left nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item " role="presentation">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">I. Đổi mới 30 ngày miễn phí</a>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">II. Bảo hành tiêu chuẩn</a>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">III. Bảo hành mở rộng</a>
+                    </li>
+                </ul>
+                <div class="statistical__right tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active statistical__right__text" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <p>Khi mua sản phẩm tại Cellphones.com.vn, khách hàng có quyền hoàn toàn yên tâm với sản phẩm
+                            chính hãng, được bảo hành chính thức tại hãng và ngoài ra có thêm chính sách đổi mới miễn
+                            phí lên tới 30 ngày tại CellphoneS</p>
+                        <div class="statistical__right__table">
+                            <table>
+                                <tr class="statistical__right__table__color">
+                                    <th>Loại sản phẩm</th>
+                                    <th>Đổi mới miễn phí(*)</th>
+                                    <th>Quy định nhập lại, trả lại</th>
+                                </tr>
+                                <tr>
+                                    <th>Điện thoại/ Máy tính bảng/ Macbook/ Apple watch</th>
+                                    <th>30 ngày</th>
+                                    <th>- Trong 30 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại(hoặc giá mua nếu
+                                        giá mua thấp hơn giá hiện tại)
+                                        - Sau 30 ngày nhập lại máy theo giá thoả thuận</th>
+                                </tr>
+                                <tr>
+                                    <th>Samsung Watch</th>
+                                    <th>30 ngày</th>
+                                    <th>- Trong 30 ngày đầu nhập lại máy, trừ phí 30% trên giá hiện tại(hoặc giá mua nếu
+                                        giá mua thấp hơn giá hiện tại)
+                                        - Sau 30 ngày nhập lại máy theo giá thoả thuận</th>
+                                </tr>
+                                <tr>
+                                    <th>Laptop</th>
+                                    <th>30 ngày</th>
+                                    <th>- Trong 30 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại(hoặc giá mua nếu
+                                        giá mua thấp hơn giá hiện tại)
+                                        - Sau 30 ngày: Nhập lại theo thoả thuận</th>
+                                </tr>
+                                <tr>
+                                    <th>Phụ kiện < 1 triệu</th>
+                                    <th>1 năm(Sản phẩm mua mới)
+                                        1 tháng(Sản phẩm mua cũ)</th>
+                                    <th>Không áp dụng nhập lại</th>
+                                </tr>
+                                <tr>
+                                    <th>Phụ kiện > 1 triệu</th>
+                                    <th>15 ngày</th>
+                                    <th>Không áp dụng nhập lại.
+                                        Riêng Airpod:
+                                        - Trong 15 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại (hoặc giá mua
+                                        nếu giá mua thấp hơn giá hiện tại)
+                                        - Sau 15 ngày nhập lại máy theo giá thoả thuận</th>
+                                </tr>
+                                <tr>
+                                    <th>Nhà thông minh</th>
+                                    <th>15 ngày</th>
+                                    <th>Không áp dụng nhập lại</th>
+                                </tr>
+                                <tr>
+                                    <th>Bảo hành mở rộng</th>
+                                    <th>15 ngày</th>
+                                    <th>Trong 7 ngày đầu, máy không lỗi, khách hàng trả lại gói BHMR
+                                        > Nhập lại trừ phí 50% gói BHMR</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>(*): Lỗi phần cứng từ phía nhà sản xuất</p>
+                        <p><span>Điều kiện đổi trả</span></p>
+                        <ul>
+                            <li>Máy: Như mới, không xước xát, không dán decal, hình trang trí</li>
+                            <li>Máy cũ: có tình trạng sản phẩm như lúc mới mua</li>
+                            <li>Hộp: Như mới, không móp méo, rách, vỡ, bị viết, vẽ, quấn băng dính, keo; có Serial/IMEI
+                                trên hộp trùng với thân máy.</li>
+                            <li>Phụ kiện và quà tặng: Còn đầy đủ, nguyên vẹn, không móp méo xước xát hoặc bị hư hại
+                                trong quá trình sử dụng.</li>
+                            <li>Tài khoản: Máy đã đã được đăng xuất khỏi tất cả các tài khoản như: iCloud, Google
+                                Account, Mi Account…</li>
+                            <li>(*) Lỗi từ phía Nhà sản xuất là các lỗi bao gồm: Lỗi nguồn, lỗi trên mainboard, ổ cứng,
+                                màn hình và các linh kiện phần cứng bên trong</li>
+                            <li>Ví dụ: Sọc màn hình, tràn màu, loa rè, màn hình có từ 3 điểm chết trở lên hoặc 1 điểm
+                                chết có kích thước lớn hơn 1mm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="statistical__right__text">
+                            <p>Các sản phẩm chính hãng, Quý khách có thể tới các TTBH chính hãng hoặc trực tiếp tới các
+                                cửa hàng CellphoneS để được tiếp nhận gửi máy bảo hành chính hãng.
+                            </p>
+                            <p>
+                                Yêu cầu tiếp nhận bảo hành tùy theo quy định của từng hãng, chi tiết có trong bảng sau:
+                            </p>
+                            <div class="statistical__right__table">
+                                <table>
+                                    <tr class="statistical__right__table__color">
+                                        <th>Sản phẩm</th>
+                                        <th>Thời gian bảo hành</th>
+                                        <th>Quyền lợi bảo hành</th>
+                                        <th>Địa chỉ bảo hành</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Máy mới</th>
+                                        <th>12 tháng(hoặc dài hơn theo quy định của hãng)</th>
+                                        <th>Quyền lợi bảo hành của hãng</th>
+                                        <th>TTBH chính hãng</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Máy đã kích hoạt bảo hành chính hãng</th>
+                                        <th>12 tháng = Thời gian bảo hành còn lại tại hãng + Bảo hành tại CellphoneS
+                                        </th>
+                                        <th>- Theo quyền lợi bảo hành của hãng trong thời gian được hãng bảo hành
+                                            - Sửa chữa, thay thế linh kiện trong thời gian bảo hành còn lại tại
+                                            CellphoneS</th>
+                                        <th>TTBH chính hãng & CellphoneS/ Điện Thoại Vui</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Máy cũ</th>
+                                        <th>6 tháng</th>
+                                        <th>Sửa chữa, thay thế linh kiện</th>
+                                        <th>CellphoneS/ Điện Thoại Vui</th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <ul>
+                                <li> Trung tâm bảo hành của các hãng, quý khách có thể xem chi tiết tại:
+                                    https://cellphones.com.vn/bao-hanh/apple</li>
+                                <li>Trong thời gian đợi bảo hành - sửa chữa, khách hàng sẽ được hỗ trợ miễn phí một điện
+                                    thoại khác để sử dụng.</li>
+                                <li> Khách hàng trả lại máy đã mượn sau khi nhận lại máy của mình.</li>
+                                <li><span>Quy định bảo hành phụ kiện theo kèm máy:</span></li>
+                                <li><span>Vsmart</span>: 6 tháng.</li>
+                                <li><span>Asus</span>: 6 tháng</li>
+                                <li><span>Nokia</span>: 6 tháng</li>
+                            </ul>
+                            <p>Quyền lợi bảo hành (lỗi từ phía nhà sx): 1 đổi tất cả các lỗi</p>
+                            <p><span>Địa chỉ BH: TTBH chính hãng. <a class="color__wirte" href="#">Click vào để tìm địa
+                                        chỉ</a></span></p>
+                            <p><span>Lưu ý về dữ liệu trên các thiết bị</span></p>
+                            <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu.span <span><a class="color__wirte"
+                                        href="#">(Hướng dẫn chi tiết với Android | </a><a class="color__wirte"
+                                        href="#">Hướng dẫn chi tiết với IOS)</a></span></p>
+
+                            <p> Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố
+                                gắng hết sức để hỗ trợ - hướng dẫn khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa
+                                hàng <span>không chịu trách nhiệm về việc mất bất cứ dữ liệu</span> trong mọi trường
+                                hợp.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="statistical__right__text">
+                            <p><span>1. Sản phẩm áp dụng: </span>Điện thoại, máy tính bảng mới/ cũ; Tai nghe cao cấp
+                                mới, Đồng hồ thông minh Apple/ Samsung mới.</p>
+                            <p><span>2. Thời gian bảo hành</span>06 tháng/12 tháng</p>
+                            <p>Sản phẩm bị lỗi do nhà sản xuất.</p>
+                            <p>Việc kiểm tra và xác định lỗi do nhà sản xuất được thực hiện bởi Trung Tâm Bảo Hành Điện
+                                Thoại Vui – Đối tác sửa chữa các sản phẩm của CellphoneS hoặc Trung tâm bảo hành của nhà
+                                sản xuất.</p>
+                            <p><span>4. Quyền lợi bảo hành:</span></p>
+                            <p><span>4.1 Đổi sản phẩm sau khi sản phẩm được kiểm tra và xác định đúng bị lỗi phần cứng
+                                    phát sinh từ phía nhà sản xuất:</span></p>
+
+                            <div class="statistical__right__table">
+                                <table>
+                                    <tr class="statistical__right__table__color">
+                                        <th>Phạm vi bảo hành</th>
+                                        <th>Bảo hành tiêu chuẩn</th>
+                                        <th>BH 1 đổi 1 - VIP</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Mainboard (lỗi nguồn), ổ cứng</th>
+                                        <th>
+                                            <p>- Bảo hành sửa chữa</p>
+                                            <p>- Riêng iPhone mới: 1 đổi 1 theo quy định</p>
+                                            <p>- Sản phẩm đổi là sản phẩm tồn kho/chưa, đã kích hoạt/ cũ</p>
+                                        </th>
+                                        <th>1 đổi 1</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Màn hình cảm ứng (>= 3 điểm chết hoặc kích thước điểm chết >= 1mm)</th>
+                                        <th rowspan="2">Bảo hành sửa chữa</th>
+                                        <th rowspan="2">1 đổi 1</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Các lỗi linh kiện: camera (trước/sau), loa (trong/ngoài), chip wifi, mic
+                                            thoại, đèn flash …</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Lỗi chân sim, chân khe cắm thẻ nhớ, chân sạc</th>
+                                        <th>Không bảo hành</th>
+                                        <th>Bảo hành sửa chữa</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Pin và phím bấm vật lý bên ngoài hư hỏng, không hoạt động (âm lượng, phím
+                                            nguồn…)</th>
+                                        <th>Bảo hành sửa chữa 3 Tháng
+
+                                            (Pin iPhone cũ: 6 tháng)</th>
+                                        <th>1 đổi 1 trong 12 Tháng</th>
+                                    </tr>
+                                </table>
+                                <p><span>4.2</span> Sản phẩm đổi bảo hành (A) là sản phẩm giống với với sản phẩm Khách
+                                    hàng mua ban đầu tại CellphoneS.</p>
+                                <p>Ví dụ: Khách hàng mua sản phẩm A -> Nếu xảy ra lỗi từ phía nhà sản xuất và sản phẩm A
+                                    có tham gia gói Bảo hành 1 đổi 1 – VIP -> Khách hàng sẽ được đổi bảo hành sản phẩm
+                                    là A</p>
+                                <p><span>4.3 </span>Thời gian xử lý:</p>
+                                <p>-Trong vòng 24h kể từ thời điểm tiếp nhận sản phẩm</p>
+                                <p>-Với các trường hợp sản phẩm trong tình trạng không hoạt động, sản phẩm không thể
+                                    kiểm tra, xác minh được số series, IMEI thì CellphoneS cần 05 – 07 ngày làm việc để
+                                    gửi sản phẩm về hãng sản xuất để xác minh.</p>
+                                <p><span>4.4 </span>Trường hợp Cellphones.com.vn có sản phẩm để đổi cho Khách hàng nhưng
+                                    Khách hàng muốn đổi sang sản phẩm khác thì phải đổi sang sản phẩm có giá bán cao hơn
+                                    sản phẩm hiện tại (A) và chịu phí 10% giá trị sản phẩm khi nhập lại:</p>
+
+                                <p><span>Giá nhập lại sản phẩm = Giá bán hiện tại sản phẩm (A) x 90%</span></p>
+                                <p>(trong đó: giá bán hiện tại sản phẩm (A) nhỏ hơn hoặc bằng giá mua sản phẩm ban đầu,
+                                    trường hợp giá bán hiện tại sản phẩm (A) lớn hơn giá mua sản phẩm ban đầu thì giá
+                                    bán hiện tại sản phẩm được tính bằng giá mua ban đầu).</p>
+                                <p><span>4.5 </span>Trong trường hợp sản phẩm được đổi phát sinh lỗi tiếp (thuộc phạm vi
+                                    bảo hành), CellphoneS vẫn sẽ bảo hành cho sản phẩm theo chế độ 1 đổi 1 trong thời
+                                    gian bảo hành còn lại.</p>
+                                <p><span>4.6 </span>Với các trường hợp không có sản phẩm để đổi ngay, CellphoneS cam kết
+                                    thời gian xử lý đổi sản phẩm tối đa 07 ngày làm việc (trừ 7 + CN). Sau thời gian
+                                    này, nếu không có sản phẩm đổi cho khách hàng, Cellphones.com.vn sẽ:</p>
+                                <p><span>4.6.1 </span> Đổi cho khách hàng một sản phẩm khác cùng thương hiệu, dòng sản
+                                    phẩm (ví dụ dòng Note Series, S Series với Samsung hoặc dòng Pro/Pro max với Apple)
+                                    và có chất lượng tương đương với sản phẩm khách hàng mua ban đầu tại CellphoneS,
+                                    hoặc</p>
+                                <p><span>4.6.2 </span>Nhập lại cho khách hàng theo công thức sau để đổi (bù phí) sang
+                                    sản
+                                    phẩm khác:</p>
+                                <p><span>Giá trị của sản phẩm tại thời điểm bảo hành = Giá mua sản phẩm x (100% - 3% x
+                                        Số tháng sử dụng sản phẩm)</span></p>
+                                <p>(Số tháng sử dụng = Tháng tại thời điểm đổi sản phẩm – Tháng tại thời điểm mua sản
+                                    phẩm )</p>
+                                <p>Trường hợp nhập sản phẩm, khách hàng phải có hộp, phụ kiện. Nếu không đầy đủ hộp &
+                                    phụ kiện, CellphoneS trừ phí 5% giá trị của sản phẩm tại thời điểm bảo hành/món
+                                    (hộp/phụ kiện)</p>
+                                <p><span>4.7</span>Dịch vụ bảo hành này không áp dụng đối với hộp và phụ kiện kèm theo
+                                    như: tai nghe, sạc, cáp...</p>
+                                <p><span>4.7</span>Khách hàng có thể chuyển nhượng quyền sở hữu của sản phẩm và gói
+                                    <span>Bảo hành 1 đổi 1 VIP </span>trong thời gian bảo hành.
+                                </p>
+                                <p><span>Lưu ý: </span></p>
+                                <p>- Nếu ngoại hình sản phẩm cấn, móp, cong, nứt, gãy thì Khách hàng không được hưởng
+                                    quyền lợi của gói bảo hành này. </p>
+                                <p>- Cơ sở xác định sản phẩm lỗi pin: Có giấy xác nhận lỗi pin từ Trung Tâm Bảo Hành
+                                    hãng / Hoặc kiểm tra tại Trung Tâm Bảo Hành Điện Thoại Vui – Đối tác sửa chữa các
+                                    sản phẩm của CellphoneS, cơ sở xác định lỗi pin như sau: </p>
+                                <ul>
+                                    <li>Lỗi pin hao nhanh: tiêu hao <span>> 20%/giờ</span> khi xem Youtube với: Wifi,
+                                        mức âm lượng <span>50%</span>; mức pin ban đầu <span>100%</span>; độ sáng màn
+                                        hình <span>50%</span>.</li>
+                                    <li>Lỗi pin chai: Mức độ chai pin <span>>= 30%</span> đo bằng ứng dụng 3u Tools.
+                                    </li>
+                                </ul>
+                                <p>- Cơ sở xác định sản phẩm lỗi phím bấm vật lý: Thử kiểm tra nhấn phím bấm vật lý
+                                    trong <span>10 lần liên tiếp</span> và phím bấm không hoạt động (không phản hồi).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="data">
+
+        <div class="data__text">
+            <i>
+                <p><span>Lưu ý về dữ liệu trên các thiết bị:</span></p>
+            </i>
+            <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu . <span class="color__wirte">(Hướng dẫn chi tiết với
+                    Android | Hướng dẫn chi tiết với iOS)</span> </p>
+            <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để
+                <span>hỗ trợ - hướng dẫn</span> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <span>không
+                    chịu trách nhiệm về việc mất bất cứ dữ liệu</span> trong mọi trường hợp
+            </p>
+            <i>
+                <p><span>Lưu ý: Quý khách được gia hạn bảo hành/ thời gian đổi lỗi nếu sản phẩm hết hạn bảo hành/ thời
+                        gian đổi lỗi trùng vào thời điểm giãn cách xã hội tại thành phố Hồ Chí Minh. Vui lòng gọi tổng
+                        đài <span class="color__wirte">1800.2097</span> (Miền Nam) hoặc <span
+                            class="color__wirte">1800.2044</span> (Miền Bắc) (miễn phí) để thông báo khi gặp sự
+                        cố.</span></p>
+            </i>
+            <i>
+                <p><span>Để được hỗ trợ trực tiếp với dịch vụ bảo hành, sửa chữa vui lòng liên hệ tổng đài: <span
+                            class="color__wirte">1800.2064</span> (miễn phí), hệ thống cửa hàng sửa chữa Điện Thoại
+                        Vui.</span></p>
+            </i>
+        </div>
+
+    </section>
+    <section class="askAndAnswer">
+        <h3>Hỏi và đáp</h3>
+        <div class="ask">
+            <div class="askAndAnswer__mess">
+                <input class="input_first" type="input"
+                    placeholder="Xin mời để lại câu hỏi, SellphoneS sẽ trả lời ngay trong 1h, các câu hỏi sau 22h-8h sẽ được trả lời vào sáng hôm sau.">
+                <button class="send"><i class="fa fa-paper-plane"></i> Gửi</button>
+            </div>
+            <p><span>Vui lòng nhập bình luận</span></p>
+        </div>
+
+        <div class="askAndAnswer__all">
+            <div class="askAndAnswer__row">
+                <p><span class="font">P</span>PhuongThanhPhan</p>
+                <p class="time"><i class="fa fa-clock"></i> 1 ngày trước</p>
+            </div>
+
+            <div class="askAndAnswer__all__one"><input class="input_second" type="input"
+                    placeholder="Mặt hàng này còn không?"></div>
+
+        </div>
+
+        <div class="askAndAnswer__all">
+            <div class="askAndAnswer__row">
+                <p class="indent"><img class="img" src="./img/logo2.svg" alt=""> Quản Trị Viên <span
+                        class="QTV">QTV</span></p>
+                <p class="time"><i class="fa fa-clock"></i> 1 ngày trước</p>
+            </div>
+
+            <div class="askAndAnswer__all__two"> <input class="input_second" type="input" placeholder=""></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- End Code -->
+
+    <div class="shopping">
+        <div class="shopping__black"></div>
+        <div class="shopping__view">
+            <div class="shopping__top">
+                <span>Giỏ Hàng</span>
+                <i class="fa fa-times" id="closeCart"></i>
+            </div>
+            <div class="shopping__body">
+                <div class="shopping__products">
+                </div>
+                <div class="shopping__total">Tổng số tiền: <span>0đ</span></div>
+                <a href="./order-products.html" class="shopping__payment">Thanh Toán</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container__first">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h3 class="footer__title">Tìm cửa hàng</h3>
+                    <p><a href="#">Tìm cửa hàng gần nhất</a></p>
+                    <p><a href="#">Mua hàng từ xa</a></p>
+                    <p><a href="#" class="footer__color--red">Gặp trực tiếp cửa hàng gần nhất (Zalo hoặc gọi điện)</a>
+                    </p>
+                    <h3 class="footer__title">Phương thức thanh toán</h3>
+                    <div class="footer__payment">
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                        </div>
+                        <h3 class="footer__title">Đối tác dịch vụ bảo hành</h3>
+                        <p>Điện thoại - Máy tính</p>
+                        <div class="footer__insurance"></div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Mua hàng và thanh toán Online</a></p>
+                            <p><a href="#">Mua hàng trả góp Online</a></p>
+                            <p><a href="#">Tra thông tin đơn hàng</a></p>
+                            <p><a href="#">Tra điểm Smember</a></p>
+                            <p><a href="#">Tra thông tin bảo hành</a></p>
+                            <p><a href="./invoiceLookup.html">Tra cứu hoá đơn điện tử</a></p>
+                            <p><a href="#">Trung tâm bảo hành chính hãng</a></p>
+                            <p><a href="#">Quy định về việc sao lưu dữ liệu</a></p>
+                            <p><a href="#">Dịch vụ bảo hành điện thoại</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Quy chế hoạt động</a></p>
+                            <p><a href="./invoiceLookup.html">Chính sách Bảo hành</a></p>
+                            <p><a href="#">Liên hệ hợp tác kinh doanh</a></p>
+                            <p><a href="#">Đơn Doanh nghiệp</a></p>
+                            <p><a href="#">Ưu đãi từ đối tác</a></p>
+                            <p><a href="#">Tuyển dụng</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Công ty TNHH Thương mại và dịch vụ kỹ thuật DIỆU PHÚC - GPĐKKD: 0316172372 do sở KH & ĐT TP. HCM cấp
+                ngày 02/03/2020. Địa chỉ: 350-352 Võ Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam.
+                Điện thoại: 028.7108.9666.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+</body>
+
+</html>

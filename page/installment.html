@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/viacard.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="white">
+    <div class="lds-wrapper">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container__first">
+            <div class="header__content">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo/logo.svg" alt="logo smart store">
+                </a>
+                <div class="header__location header__bg">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="header__location--select">
+                        <p class="header__distance">Xem giá tại</p>
+                        <p>Chọn địa chỉ <i class="fa fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="header__search--input" placeholder="Bạn cần tìm gì?" id="search-products">
+                    <div class="header__search--result" id="search">
+
+                    </div>
+                </div>
+                <ul class="header__information">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="header__information--desc">
+                            <a href="./contact-us.html">
+                                <p class="header__distance">Thông tin</p>
+                                <p>cửa hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-truck"></i>
+                        <div class="header__information--desc">
+                            <a href="./check-order.html">
+                                <p class="header__distance">Tra cứu</p>
+                                <p>đơn hàng</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="view-cart">
+                        <div class="header__shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="header__shopping--count">0</span>
+                        </div>
+                        <div class="header__information--desc">
+                            <p class="header__distance">Giỏ</p>
+                            <p>hàng</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./smember.html" class="header__user header__bg">
+                    <i class="fa fa-user-circle"></i>
+                    <p>Smember</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="viacard_top">
+            <div class="viacard_top_1">
+                <div>
+                    <img src="./images/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg" alt="">
+                </div>
+                <div>
+                    <div><span><a href="#" class="viacard_top_name">Mua trả góp Samsung Galaxy Z Fold3 5G </a></span>
+                    </div><br>
+                    <div style="font-size:13px;"><b>Giá:</b> <Span class="price">40.490.000 ₫</Span></div>
+                </div>
+            </div>
+            <div class="viacard_top_2">
+                <strong>Ưu đãi &amp; Khuyến mãi khi mua trả góp Samsung Galaxy Z Fold3 5G</strong>
+                <h6>- Chương trình khuyến mại:</h6>
+                <ul>
+                    <li>Giảm 50% cho Galaxy Watch 4 44mm và Watch 4 Classic 42mm khi mua kèm (áp dụng trên giá niêm yết)
+                    </li>
+                    <li><a href="#" class="viacard_link">Tặng gói dịch vụ ưu tiên Z Pass Priority</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="viacard_mid_version1">
+            <strong>Chọn phương thức trả góp phù hợp:</strong><br>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="credit-tab" data-toggle="tab" href="#credit" role="tab"
+                        aria-controls="credit" aria-selected="true">
+                        <div class="viacard__item">
+                            <div class="viacard__item--icon"><i class="fa fa-money-bill-alt"></i></div>
+                            <div class="viacard__right">
+                                <p>Qua Home Credit, FE Credit</p>
+                                <p>4.223.750 đ/ tháng trong 6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="visa-tab" data-toggle="tab" href="#visa" role="tab"
+                        aria-controls="visa" aria-selected="false">
+                        <div class="viacard__item">
+                            <div class="viacard__item--icon"><i class="fa fa-money-bill-alt"></i></div>
+                            <div class="viacard__right">
+                                <p>Qua Home Credit, FE Credit</p>
+                                <p>4.223.750 đ/ tháng trong 6 tháng</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="credit-tab">
+                    <div class="viacard_mid">
+                        <span>Chọn số tháng trả góp</span>
+                        <div class="infor_card">
+                            <ul>
+                                <li style="margin-left:0px;">
+                                    <a href="#">
+                                        <b>6 tháng</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <b>8 tháng</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <b>9 tháng</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <b>10 tháng</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <b>12 tháng</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Công ty </td>
+                                    <td>Logo</td>
+                                    <td>Logo</td>
+                                </tr>
+                                <tr class="table1">
+                                    <td>Giá sản phẩm </td>
+                                    <td>40.490.000 ₫ </td>
+                                    <td>40.490.000 ₫ </td>
+                                </tr>
+                                <tr>
+                                    <td>Giá mua trả góp </td>
+                                    <td style="color:#d0021b">40.490.000 ₫
+
+                                    </td>
+                                    <td style="color:#d0021b">40.490.000 ₫
+                                    </td>
+                                </tr>
+                                <tr class="table1">
+                                    <td>
+                                        Trả trước
+                                        <select>
+                                            <option value="0">0%</option>
+                                            <option value="0.1">10%</option>
+                                            <option value="0.2">20%</option>
+                                            <option value="0.3">30%</option>
+                                            <option value="0.4">40%</option>
+                                            <option value="0.5" selected="">50%</option>
+                                            <option value="0.6">60%</option>
+                                            <option value="0.7">70%</option>
+                                            <option value="0.8">80%</option>
+                                        </select>
+                                    </td>
+                                    <td>20.245.000 ₫ (50%)</td>
+                                    <td>20.245.000 ₫ (50%)</td>
+                                </tr>
+                                <tr>
+                                    <td>Lãi suất</td>
+                                    <td>2.8 % </td>
+                                    <td>3.55 % </td>
+                                </tr>
+                                <tr class="table1">
+                                    <td>Giấy tờ cần có </td>
+                                    <td>CMND + Bằng lái xe / hộ khẩu </td>
+                                    <td>CMND + Bằng lái xe / hộ khẩu </td>
+                                </tr>
+                                <tr class="table1_1">
+                                    <td>Góp mỗi tháng </td>
+                                    <td>4.053.000 ₫ </td>
+                                    <td>4.274.000 ₫</td>
+                                </tr>
+                                <tr class="table2">
+                                    <td>Gốc + lãi </td>
+                                    <td>3.941.000 ₫</td>
+                                    <td>4.093.000 ₫</td>
+                                </tr>
+                                <tr class="table2">
+                                    <td>Phí thu hộ </td>
+                                    <td>11.000 ₫/tháng </td>
+                                    <td>12.000 ₫/tháng </td>
+                                </tr>
+                                <tr class="table2">
+                                    <td><i class="fa-solid fa-square-check"></i>Bảo hiểm</td>
+                                    <td>101.000 ₫/tháng </td>
+                                    <td>169.000 ₫/tháng </td>
+                                </tr>
+                                <tr class="table1">
+                                    <td>Tổng tiền phải trả </td>
+                                    <td style="color:#d0021b">44.565.000 ₫ </td>
+                                    <td style="color:#d0021b">45.886.000 ₫ </td>
+                                </tr>
+                                <tr>
+                                    <td>Chênh lệch với mua trả thẳng </td>
+                                    <td>4.075.000 ₫ </td>
+                                    <td>5.396.000 ₫ </td>
+                                </tr>
+                                <tr class="table1">
+                                    <td></td>
+                                    <td><a href="#" class="table_logo">Chọn mua <br>(duyệt hồ sơ online)</a></td>
+                                    <td><b style="font-size: 12px;">FE Credit chưa hổ trợ duyệt hồ sơ online. Xin quý
+                                            khách vui lòng đến trực
+                                            tiếp cửa hàng để làm hồ sơ.
+                                        </b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+                    <div class="viacard_mid">
+                        <span>Bước 1: Chọn ngân hàng trả góp </span>
+                        <div class="cart">
+                            <ul class="listbank">
+                                <li class="bankDetail nh-VPBANK acti" data-bank="VPBANK"><label for="VPBANK"
+                                        id="instBank"><input name="instBank" type="radio" id="VPBANK" data-code="VPBANK"
+                                            data-name="NH TMCP Việt Nam Thịnh Vượng" data-card="VISA,MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-VPBANK"></i></label></li>
+                                <li class="bankDetail nh-TECHCOMBANK" data-bank="TECHCOMBANK"><label for="TECHCOMBANK"
+                                        id="instBank"><input name="instBank" type="radio" id="TECHCOMBANK"
+                                            data-code="TECHCOMBANK" data-name="NH TMCP Kỹ Thương Việt Nam"
+                                            data-card="VISA" onclick="ChooseBank(this)"><i
+                                            class="iconBank-TECHCOMBANK"></i></label></li>
+                                <li class="bankDetail nh-ACB" data-bank="ACB"><label for="ACB" id="instBank"><input
+                                            name="instBank" type="radio" id="ACB" data-code="ACB"
+                                            data-name="NH TMCP Á Châu" data-card="JCB,VISA,MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-ACB"></i></label></li>
+                                <li class="bankDetail nh-ANZ" data-bank="ANZ"><label for="ANZ" id="instBank"><input
+                                            name="instBank" type="radio" id="ANZ" data-code="ANZ"
+                                            data-name="NH TNHH MTV ANZ Việt Nam" data-card="VISA"
+                                            onclick="ChooseBank(this)"><i class="iconBank-ANZ"></i></label></li>
+                                <li class="bankDetail nh-HSBC" data-bank="HSBC"><label for="HSBC" id="instBank"><input
+                                            name="instBank" type="radio" id="HSBC" data-code="HSBC"
+                                            data-name="NH TNHH MTV HSBC (Việt Nam)" data-card="VISA,MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-HSBC"></i></label></li>
+                                <li class="bankDetail nh-SHINHANBANK" data-bank="SHINHANBANK"><label for="SHINHANBANK"
+                                        id="instBank"><input name="instBank" type="radio" id="SHINHANBANK"
+                                            data-code="SHINHANBANK" data-name="NH TNHH MTV Shinhan Việt Nam"
+                                            data-card="VISA" onclick="ChooseBank(this)"><i
+                                            class="iconBank-SHINHANBANK"></i></label></li>
+                                <li class="bankDetail nh-EXIMBANK" data-bank="EXIMBANK"><label for="EXIMBANK"
+                                        id="instBank"><input name="instBank" type="radio" id="EXIMBANK"
+                                            data-code="EXIMBANK" data-name="NH TMCP Xuất Nhập Khẩu"
+                                            data-card="VISA,MASTERCARD" onclick="ChooseBank(this)"><i
+                                            class="iconBank-EXIMBANK"></i></label></li>
+                                <li class="bankDetail nh-MARITIMEBANK" data-bank="MARITIMEBANK"><label
+                                        for="MARITIMEBANK" id="instBank"><input name="instBank" type="radio"
+                                            id="MARITIMEBANK" data-code="MARITIMEBANK" data-name="NH TMCP Hàng Hải"
+                                            data-card="MASTERCARD,VISA" onclick="ChooseBank(this)"><i
+                                            class="iconBank-MARITIMEBANK"></i></label></li>
+                                <li class="bankDetail nh-VIB" data-bank="VIB"><label for="VIB" id="instBank"><input
+                                            name="instBank" type="radio" id="VIB" data-code="VIB" data-name="NH Quốc tế"
+                                            data-card="MASTERCARD" onclick="ChooseBank(this)"><i
+                                            class="iconBank-VIB"></i></label></li>
+                                <li class="bankDetail nh-SACOMBANK" data-bank="SACOMBANK"><label for="SACOMBANK"
+                                        id="instBank"><input name="instBank" type="radio" id="SACOMBANK"
+                                            data-code="SACOMBANK" data-name="NH TMCP Sài Gòn Thương Tín"
+                                            data-card="JCB,VISA,MASTERCARD" onclick="ChooseBank(this)"><i
+                                            class="iconBank-SACOMBANK"></i></label></li>
+                                <li class="bankDetail nh-CTB" data-bank="CTB"><label for="CTB" id="instBank"><input
+                                            name="instBank" type="radio" id="CTB" data-code="CTB"
+                                            data-name="NH CitiBank Việt Nam" data-card="MASTERCARD,VISA"
+                                            onclick="ChooseBank(this)"><i class="iconBank-CTB"></i></label></li>
+                                <li class="bankDetail nh-SEABANK" data-bank="SEABANK"><label for="SEABANK"
+                                        id="instBank"><input name="instBank" type="radio" id="SEABANK"
+                                            data-code="SEABANK" data-name="NH TMCP Đông Nam Á"
+                                            data-card="MASTERCARD,VISA" onclick="ChooseBank(this)"><i
+                                            class="iconBank-SEABANK"></i></label></li>
+                                <li class="bankDetail nh-SC" data-bank="SC"><label for="SC" id="instBank"><input
+                                            name="instBank" type="radio" id="SC" data-code="SC"
+                                            data-name="NH TNHH MTV Standard Chartered (Việt Nam)" data-card="MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-SC"></i></label></li>
+                                <li class="bankDetail nh-TPB" data-bank="TPB"><label for="TPB" id="instBank"><input
+                                            name="instBank" type="radio" id="TPB" data-code="TPB"
+                                            data-name="NH TMCP Tiên Phong" data-card="MASTERCARD,VISA"
+                                            onclick="ChooseBank(this)"><i class="iconBank-TPB"></i></label></li>
+                                <li class="bankDetail nh-SCB" data-bank="SCB"><label for="SCB" id="instBank"><input
+                                            name="instBank" type="radio" id="SCB" data-code="SCB"
+                                            data-name="NH TMCP Sài Gòn" data-card="VISA,MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-SCB"></i></label></li>
+                                <li class="bankDetail nh-FE" data-bank="FE"><label for="FE" id="instBank"><input
+                                            name="instBank" type="radio" id="FE" data-code="FE" data-name="FE CREDIT"
+                                            data-card="MASTERCARD" onclick="ChooseBank(this)"><i
+                                            class="iconBank-FE"></i></label></li>
+                                <li class="bankDetail nh-NAB" data-bank="NAB"><label for="NAB" id="instBank"><input
+                                            name="instBank" type="radio" id="NAB" data-code="NAB"
+                                            data-name="NH TMCP Nam Á" data-card="MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-NAB"></i></label></li>
+                                <li class="bankDetail nh-OCB" data-bank="OCB"><label for="OCB" id="instBank"><input
+                                            name="instBank" type="radio" id="OCB" data-code="OCB"
+                                            data-name="NH Phương Đông" data-card="JCB,MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-OCB"></i></label></li>
+                                <li class="bankDetail nh-KLB" data-bank="KLB"><label for="KLB" id="instBank"><input
+                                            name="instBank" type="radio" id="KLB" data-code="KLB"
+                                            data-name="NH TMCP Kiên Long" data-card="VISA" onclick="ChooseBank(this)"><i
+                                            class="iconBank-KLB"></i></label></li>
+                                <li class="bankDetail nh-SHB" data-bank="SHB"><label for="SHB" id="instBank"><input
+                                            name="instBank" type="radio" id="SHB" data-code="SHB"
+                                            data-name="NH TMCP Sài Gòn Hà Nội" data-card="JCB,MASTERCARD,VISA"
+                                            onclick="ChooseBank(this)"><i class="iconBank-SHB"></i></label></li>
+                                <li class="bankDetail nh-BIDV" data-bank="BIDV"><label for="BIDV" id="instBank"><input
+                                            name="instBank" type="radio" id="BIDV" data-code="BIDV"
+                                            data-name="NH TMCP Đầu Tư và Phát Triển Việt Nam"
+                                            data-card="VISA,MASTERCARD" onclick="ChooseBank(this)"><i
+                                            class="iconBank-BIDV"></i></label></li>
+                                <li class="bankDetail nh-VCB" data-bank="VCB"><label for="VCB" id="instBank"><input
+                                            name="instBank" type="radio" id="VCB" data-code="VCB"
+                                            data-name="NH TMCP Ngoại Thương Việt Nam" data-card="MASTERCARD,JCB,VISA"
+                                            onclick="ChooseBank(this)"><i class="iconBank-VCB"></i></label></li>
+                                <li class="bankDetail nh-MB" data-bank="MB"><label for="MB" id="instBank"><input
+                                            name="instBank" type="radio" id="MB" data-code="MB"
+                                            data-name="NH TMCP Quân Đội" data-card="JCB,VISA,MASTERCARD"
+                                            onclick="ChooseBank(this)"><i class="iconBank-MB"></i></label></li>
+                                <li class="bankDetail nh-HOMECREDIT" data-bank="HOMECREDIT"><label for="HOMECREDIT"
+                                        id="instBank"><input name="instBank" type="radio" id="HOMECREDIT"
+                                            data-code="HOMECREDIT" data-name="Home Credit Vietnam" data-card="VISA"
+                                            onclick="ChooseBank(this)"><i class="iconBank-HOMECREDIT"></i></label></li>
+                            </ul>
+                        </div>
+                        <span>Bước 2: Chọn loại thẻ thanh toán</span>
+                        <ul class="type__logo">
+                            <li class="logos"><img src="../images/payment/visa.png" alt=""></li>
+                            <li class="logos"><img src="../images/payment/card-master.png" alt=""></li>
+                        </ul>
+                        <div class="viacard__bottom">
+                            <div>
+                                <span>Bước 3: Chọn kỳ hạn</span>
+                                <select>
+                                    <option></option>
+                                    <option value="3">3 tháng</option>
+                                    <option value="6">6 tháng</option>></option>
+                                    <option value="9">9 tháng</option>></option>
+                                    <option value="12">12 tháng</option>></option>
+                                </select>
+                            </div>
+                            <div>
+                                <span>Bước 4: Chọn số tiền bạn muốn trả góp</span>
+                                <select>
+                                    <option></option>
+                                    <option value="3x6">3.000.000 ₫</option>
+                                    <option value="4x6">4.000.000 ₫</option>
+                                    <option value="5x6">5.000.000 ₫</option>
+                                    <option value="6x6">6.000.000 ₫</option>
+                                    <option value="7x6">7.000.000 ₫</option>
+                                    <option value="8x6">8.000.000 ₫</option>
+                                    <option value="9x6">9.000.000 ₫</option>
+                                    <option value="10x6">10.000.000 ₫</option>
+                                    <option value="11x6">11.000.000 ₫</option>
+                                    <option value="12x6">12.000.000 ₫</option>
+                                    <option value="13x6">13.000.000 ₫</option>
+                                    <option value="14x6">14.000.000 ₫</option>
+                                    <option value="15x6">15.000.000 ₫</option>
+                                    <option value="16x6">16.000.000 ₫</option>
+                                    <option value="17x6">17.000.000 ₫</option>
+                                    <option value="18x6">18.000.000 ₫</option>
+                                    <option value="19x6">19.000.000 ₫</option>
+                                    <option value="20x6">20.000.000 ₫</option>
+                                    <option value="21x6">21.000.000 ₫</option>
+                                    <option value="22x6">22.000.000 ₫</option>
+                                    <option value="23x6">23.000.000 ₫</option>
+                                    <option value="24x6">24.000.000 ₫</option>
+                                    <option value="25x6">25.000.000 ₫</option>
+                                    <option value="26x6">26.000.000 ₫</option>
+                                    <option value="27x6">27.000.000 ₫</option>
+                                    <option value="28x6">28.000.000 ₫</option>
+                                    <option value="29x6">29.000.000 ₫</option>
+                                    <option value="30x6">30.000.000 ₫</option>
+                                    <option value="31x6">31.000.000 ₫</option>
+                                    <option value="32x6">32.000.000 ₫</option>
+                                    <option value="33x6">33.000.000 ₫</option>
+                                    <option value="34x6">34.000.000 ₫</option>
+                                    <option value="35x6">35.000.000 ₫</option>
+                                    <option value="36x6">36.000.000 ₫</option>
+                                    <option value="37x6">37.000.000 ₫</option>
+                                    <option value="38x6">38.000.000 ₫</option>
+                                    <option value="39x6">39.000.000 ₫</option>
+                                    <option value="40x6">40.000.000 ₫</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="infor__cost">
+                            <table>
+                                <tr>
+                                    <td style="font-weight: bold ;background-color: rgba(230, 81, 0, 0.15);"
+                                        colspan="2">Thông tin
+                                        trả góp
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="infor__bold">Số tháng trả góp</td>
+                                    <td>3 tháng</td>
+                                </tr>
+                                <tr>
+                                    <td class="infor__bold">Chênh lệch với mua trả thẳng</td>
+                                    <td>126.000 ₫</td>
+                                </tr>
+                                <tr>
+                                    <td class="infor__bold">Góp mỗi tháng</td>
+                                    <td>1.042.000 ₫</td>
+                                </tr>
+                                <tr>
+                                    <td class="infor__bold">Tổng tiền trả góp</td>
+                                    <td>3.126.000 ₫</td>
+                                </tr>
+                            </table>
+                            <h5>Thông tin mua hàng</h5>
+                            <div class="form-row">
+                                <div class="form-row1">
+                                    <div style="width: 48%;">
+                                        <div>Họ và tên ( bắt buộc )</div>
+                                        <input style="width: 100%;">
+                                    </div>
+                                    <div style="width: 48%;">
+                                        <div>Số điện thoại đặt hàng ( bắt buộc )</div>
+                                        <input style="width: 100%;">
+                                    </div>
+                                </div>
+
+                                <div style="width:100%;">
+                                    <div>Lưu ý</div>
+                                    <input style="width:100%;" type="text" id="#control1">
+                                </div>
+
+                            </div>
+                            <h5>- Vui lòng chọn cách nhận hàng</h5>
+                            <div style="display: flex;margin-bottom: 25px;">
+                                <input type="radio">
+                                <div style="margin-left: 4px;font-size: 12px;">Giữ hàng tại cửa hàng </div>
+                            </div>
+                            <a class="note" href="#">Lưu ý: Do ảnh hưởng Covid-19, thời gian giao hàng và hoàn tiền có
+                                thể kéo dài
+                                (Xem chi tiết)</a>
+                            <a href="#">
+                                <div class="button__buy">THANH TOÁN TRẢ GÓP</div>
+                            </a>
+                            <a href="#">
+                                <div class="button__buybottom">Bằng cách đặt hàng, bạn đã đồng ý với điều khoản sử dụng
+                                    &amp; hướng
+                                    dẫn hoàn trả.</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="shopping">
+        <div class="shopping__black"></div>
+        <div class="shopping__view">
+            <div class="shopping__top">
+                <span>Giỏ Hàng</span>
+                <i class="fa fa-times" id="closeCart"></i>
+            </div>
+            <div class="shopping__body">
+                <div class="shopping__products">
+                </div>
+                <div class="shopping__total">Tổng số tiền: <span>0đ</span></div>
+                <a href="./order-products.html" class="shopping__payment">Thanh Toán</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container__first">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h3 class="footer__title">Tìm cửa hàng</h3>
+                    <p><a href="#">Tìm cửa hàng gần nhất</a></p>
+                    <p><a href="#">Mua hàng từ xa</a></p>
+                    <p><a href="#" class="footer__color--red">Gặp trực tiếp cửa hàng gần nhất (Zalo hoặc gọi điện)</a>
+                    </p>
+                    <h3 class="footer__title">Phương thức thanh toán</h3>
+                    <div class="footer__payment">
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                        </div>
+                        <h3 class="footer__title">Đối tác dịch vụ bảo hành</h3>
+                        <p>Điện thoại - Máy tính</p>
+                        <div class="footer__insurance"></div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Mua hàng và thanh toán Online</a></p>
+                            <p><a href="#">Mua hàng trả góp Online</a></p>
+                            <p><a href="#">Tra thông tin đơn hàng</a></p>
+                            <p><a href="#">Tra điểm Smember</a></p>
+                            <p><a href="#">Tra thông tin bảo hành</a></p>
+                            <p><a href="#">Tra cứu hoá đơn điện tử</a></p>
+                            <p><a href="#">Trung tâm bảo hành chính hãng</a></p>
+                            <p><a href="#">Quy định về việc sao lưu dữ liệu</a></p>
+                            <p><a href="#">Dịch vụ bảo hành điện thoại</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Quy chế hoạt động</a></p>
+                            <p><a href="#">Chính sách Bảo hành</a></p>
+                            <p><a href="#">Liên hệ hợp tác kinh doanh</a></p>
+                            <p><a href="#">Đơn Doanh nghiệp</a></p>
+                            <p><a href="#">Ưu đãi từ đối tác</a></p>
+                            <p><a href="#">Tuyển dụng</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Công ty TNHH Thương mại và dịch vụ kỹ thuật DIỆU PHÚC - GPĐKKD: 0316172372 do sở KH & ĐT TP. HCM cấp
+                ngày 02/03/2020. Địa chỉ: 350-352 Võ Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam.
+                Điện thoại: 028.7108.9666.
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+</body>
+
+</html>
