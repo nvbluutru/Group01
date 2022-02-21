@@ -621,6 +621,9 @@ body {
   transition: all 0.5s;
   transform: scale(0.9);
 }
+.item button a {
+  color: inherit;
+}
 .item button:hover {
   transform: scale(1);
 }

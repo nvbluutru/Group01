@@ -14,9 +14,6 @@ const renderImgDetail = (obj) => {
     renderImg.innerHTML = content;
     renderSmall.innerHTML = contentImgSmall;
 }
-const findItemId = (id, data) => {
-    return data.find(item => item.id == id);
-}
 const renderCarouselProducts = (data) => {
     const product = new Products;
     const eleProduct = getEle("#render-products");
@@ -48,7 +45,7 @@ const renderCarouselProducts = (data) => {
             <span>${item.evaluate.length} đánh giá</span>
             <div class="products__add" data-id="${item.id}"><i class="fa fa-cart-plus"></i></div>
         </div>
-        <button>So sánh sản phẩm</button>
+        <button><a href="../page/compare-product.html?id=${item.id}">So sánh sản phẩm</a></button>
     </div>`;
     }).join("");
     eleProduct.innerHTML = contentHTML;
@@ -145,7 +142,7 @@ const mainDetail = async () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
-    const infoProduct = findItemId(id, data.products);
+    const infoProduct = product.findItemId(id, data.products);
     renderImgDetail(infoProduct);
     renderInformation(infoProduct, data.products);
     renderCarouselProducts(data.products);

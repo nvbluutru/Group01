@@ -16,17 +16,25 @@
 }
 
 .compare__body {
-  padding: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 50px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
 }
 .compare__item {
-  flex-basis: 35%;
+  flex-basis: 50%;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .compare__suggest {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 .compare__search {
@@ -50,14 +58,15 @@
   font-size: 17px;
 }
 .compare__products--img {
-  width: 350px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .compare__line {
-  width: 2px;
-  background-color: #ccc;
+  width: 1px;
+  background-color: #eee;
   position: relative;
   font-weight: bold;
   color: #858585;
@@ -66,6 +75,14 @@
 .compare__desc {
   text-align: center;
   font-size: 18px;
+}
+.compare__detail {
+  color: black;
+}
+.compare__detail:hover {
+}
+.compare__price {
+  margin-bottom: 10px;
 }
 .compare__price span {
   color: #d70019;
@@ -82,7 +99,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #ccc;
+  border: 1px solid #eee;
   text-align: center;
   line-height: 60px;
   transform: translate(-50%, -50%);
@@ -96,13 +113,34 @@
   text-align: center;
   cursor: pointer;
   transition: transform 0.5s;
+  position: relative;
+}
+.compare__sugest--del {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: transform 0.5s;
+}
+.compare__sugest--del:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  color: #d70019;
+}
+.compare__suggest--item:hover .compare__sugest--del {
+  opacity: 1;
+  visibility: visible;
 }
 .compare__suggest--item:hover {
   transform: scale(1.1);
   box-shadow: 0px 2px 5px 0px rgba(255, 0, 0, 0.3);
+  opacity: 0.8;
 }
 
 .compare__suggest--name {
   font-weight: 600;
   font-size: 13px;
+  padding-top: inherit;
 }

@@ -13,12 +13,16 @@
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/compare.css">
+    <link rel="stylesheet" href="../css/products.css">
 </head>
 
-<body>
+<body class="white">
     <div class="lds-wrapper">
         <div class="lds-ripple">
             <div></div>
@@ -102,55 +106,55 @@
         <div class="container__first">
             <div class="compare__content">
                 <div class="heading center-flex">
-                    <h3 class="heading__left">Điện thoại nổi bật nhất</h3>
+                    <h3 class="heading__left">So sánh sản phẩm</h3>
+                </div>
+                <div class="owl-carousel owl-theme" id="render-products">
                 </div>
                 <div class="compare__body">
                     <div class="compare__item">
-                        <div class="compare__search">
-                            <i class="fa fa-search"></i>
-                            <input type="search" class="compare__search--input">
-                        </div>
-                        <div class="compare__products--img">
-                            <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
-                        </div>
-                        <div class="compare__desc">
-                            <div class="compare__price">Chỉ từ <span>7.790.000đ</span></div>
-                            <div class="compare__promotion">
-                                <i class="fa fa-gift"></i>
-                                Nhận đến 2 khuyến mãi
-                            </div>
-                            <div class="compare__list--img">
-                                <div class="compare__item"></div>
-                                <div class="compare__item"></div>
-                                <div class="compare__item"></div>
-                            </div>
-                            <a href="#" class="compare__detail">Xem chi tiết</a>
+                        <div id="render-master">
                         </div>
                     </div>
                     <div class="compare__line">
                         <span>VS</span>
                     </div>
                     <div class="compare__item">
-                        <div class="compare__search">
-                            <i class="fa fa-search"></i>
-                            <input type="search" class="compare__search--input">
-                        </div>
                         <div class="compare__suggest">
                             <div class="compare__suggest--item">
-                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <img src="https://smlife.vn/wp-content/uploads/2021/08/Tu-quan-ao-go-hien-dai-Cultavio-1.jpg"
+                                    alt="">
                                 <div class="compare__suggest--name">Iphone 13</div>
+                                <i class="fa fa-trash compare__sugest--del"></i>
                             </div>
                             <div class="compare__suggest--item">
-                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <img src="https://smlife.vn/wp-content/uploads/2021/08/Tu-quan-ao-go-hien-dai-Cultavio-1.jpg"
+                                    alt="">
                                 <div class="compare__suggest--name">Iphone 13</div>
+                                <i class="fa fa-trash compare__sugest--del"></i>
                             </div>
                             <div class="compare__suggest--item">
-                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <img src="https://smlife.vn/wp-content/uploads/2021/08/Tu-quan-ao-go-hien-dai-Cultavio-1.jpg"
+                                    alt="">
                                 <div class="compare__suggest--name">Iphone 13</div>
+                                <i class="fa fa-trash compare__sugest--del"></i>
                             </div>
                             <div class="compare__suggest--item">
-                                <img src="../images/products/iphone_13-_pro-5_4_1.jpeg" alt="">
+                                <img src="https://smlife.vn/wp-content/uploads/2021/08/Tu-quan-ao-go-hien-dai-Cultavio-1.jpg"
+                                    alt="">
                                 <div class="compare__suggest--name">Iphone 13</div>
+                                <i class="fa fa-trash compare__sugest--del"></i>
+                            </div>
+                            <div class="compare__suggest--item">
+                                <img src="https://smlife.vn/wp-content/uploads/2021/08/Tu-quan-ao-go-hien-dai-Cultavio-1.jpg"
+                                    alt="">
+                                <div class="compare__suggest--name">Iphone 13</div>
+                                <i class="fa fa-trash compare__sugest--del"></i>
+                            </div>
+                            <div class="compare__suggest--item">
+                                <img src="https://smlife.vn/wp-content/uploads/2021/08/Tu-quan-ao-go-hien-dai-Cultavio-1.jpg"
+                                    alt="">
+                                <div class="compare__suggest--name">Iphone 13</div>
+                                <i class="fa fa-trash compare__sugest--del"></i>
                             </div>
                         </div>
                     </div>
@@ -212,15 +216,16 @@
                 <div class="footer__left">
                     <h3 class="footer__title">Tìm cửa hàng</h3>
                     <p><a href="#">Tìm cửa hàng gần nhất</a></p>
+                    <p><a href="#">Mua hàng từ xa</a></p>
                     <p><a href="#" class="footer__color--red">Gặp trực tiếp cửa hàng gần nhất (Zalo hoặc gọi điện)</a>
                     </p>
                     <h3 class="footer__title">Phương thức thanh toán</h3>
                     <div class="footer__payment">
                         <div class="footer__pay--item">
-                            <img src="../images/payment/visa.png" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="footer__pay--item">
-                            <img src="../images/payment/mastercard.png" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="footer__pay--item">
                             <img src="" alt="">
@@ -246,22 +251,34 @@
                     <div class="footer__item">
                         <div class="footer__link">
                             <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
-                            <p>Gọi kỹ thuật: <a href="#" class="footer__link--phone">1800.2055</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Gọi mua hàng: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
                         </div>
                         <h3 class="footer__title">Đối tác dịch vụ bảo hành</h3>
+                        <p>Điện thoại - Máy tính</p>
                         <div class="footer__insurance"></div>
                     </div>
                     <div class="footer__item">
                         <div class="footer__link">
                             <p><a href="#">Mua hàng và thanh toán Online</a></p>
                             <p><a href="#">Mua hàng trả góp Online</a></p>
-                            <p><a href="./check-order.html">Tra thông tin đơn hàng</a></p>
+                            <p><a href="#">Tra thông tin đơn hàng</a></p>
+                            <p><a href="#">Tra điểm Smember</a></p>
+                            <p><a href="#">Tra thông tin bảo hành</a></p>
+                            <p><a href="./invoiceLookup.html">Tra cứu hoá đơn điện tử</a></p>
+                            <p><a href="#">Trung tâm bảo hành chính hãng</a></p>
+                            <p><a href="#">Quy định về việc sao lưu dữ liệu</a></p>
+                            <p><a href="#">Dịch vụ bảo hành điện thoại</a></p>
                         </div>
                     </div>
                     <div class="footer__item">
                         <div class="footer__link">
-                            <p><a href="./Warranty_Policy.html">Chính sách Bảo hành</a></p>
-                            <p><a href="./invoiceLookup.html">Tra cứu hoá đơn điện tử</a></p>
+                            <p><a href="#">Quy chế hoạt động</a></p>
+                            <p><a href="./invoiceLookup.html">Chính sách Bảo hành</a></p>
+                            <p><a href="#">Liên hệ hợp tác kinh doanh</a></p>
+                            <p><a href="#">Đơn Doanh nghiệp</a></p>
+                            <p><a href="#">Ưu đãi từ đối tác</a></p>
+                            <p><a href="#">Tuyển dụng</a></p>
                         </div>
                     </div>
                 </div>
@@ -282,9 +299,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/Products.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/search-products.js"></script>
+    <script src="../js/compare-products.js"></script>
     <script src="../js/shopping-cart.js"></script>
 </body>
 
