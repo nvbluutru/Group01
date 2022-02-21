@@ -98,7 +98,7 @@ const renderInformation = (obj, data) => {
     </div>`
     }).join("");
     getEle(".price__setting").innerHTML = colorHTML;
-    getEle(".buying").addEventListener("click", (event) => {
+    getEle(".buying").addEventListener("click", async (event) => {
         product.addShoppingCart(event, data);
     })
 }
