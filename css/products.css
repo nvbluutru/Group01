@@ -249,9 +249,6 @@ body {
 }
 
 /* DETAIL PRODUCT */
-.detail__product {
-  border-bottom: 3px solid #d8d9d9;
-}
 .carousel-indicators li {
   width: 70px;
   height: 100px;
@@ -590,12 +587,14 @@ body {
 }
 .recommended__products__accessory h5 {
   display: inline-block;
-  padding: 5px 10px;
-  font-weight: 700;
-  border: 2px solid red;
+  padding: 5px 20px;
+  font-weight: 600;
+  border: 1px solid red;
   color: red;
   background-color: #fef2f2;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .recommended__products__accessory .item {
@@ -680,11 +679,14 @@ body {
 .characteristic button {
   display: block;
   border-radius: 10px;
-  background-color: rosybrown;
-  border: 1px solid white;
+  background-color: #d70019;
+  border: none;
   font-weight: 700;
   text-align: center;
   margin: 20px auto 0;
+}
+.characteristic button:hover {
+  background-color: #d70019;
 }
 
 /* TABLE */
@@ -722,7 +724,7 @@ body {
 .evaluate__right__center__ratio {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #d70019;
   border-radius: 10px;
 }
 
@@ -815,12 +817,20 @@ body {
 }
 .evaluate button {
   padding: 0 100px;
-  background-color: red;
+  background-color: #d70019;
   color: white;
-  border: 1px solid white;
   border-radius: 10px;
   font-size: 16px;
   padding: 5px 100px;
+  border: none;
+}
+button.btn.btn-secondary {
+  color: #000;
+  background-color: #ffffff;
+}
+.evaluate button:hover {
+  background-color: #d70019;
+  border: none;
 }
 
 /* FORM */

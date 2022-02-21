@@ -24,8 +24,11 @@
   border: 1px solid #eee;
   overflow: hidden;
 }
+.compare__item.left {
+  flex-basis: 40%;
+}
 .compare__item {
-  flex-basis: 50%;
+  flex-basis: 60%;
   padding: 50px;
   margin: 0 auto;
   display: flex;
