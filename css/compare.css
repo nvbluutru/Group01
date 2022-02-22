@@ -50,6 +50,9 @@
   gap: 20px;
   margin-bottom: 30px;
 }
+.table.characteristic__text {
+  margin-top: 20px;
+}
 .compare__search i {
   font-size: 18px;
   color: #858585;

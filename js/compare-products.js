@@ -1,4 +1,4 @@
-const renderProductFirst = (infoProduct,) => {
+const renderProductFirst = (infoProduct) => {
     const productMaster = getEle("#render-master");
     const discount = infoProduct.price * ((100 - infoProduct.promotion) / 100);
     productMaster.innerHTML = `
@@ -66,15 +66,97 @@ const renderCarouselProducts = (data) => {
 const setLocalStorage = (arr) => {
     localStorage.setItem("compare-product", JSON.stringify(arr));
 }
-const removeProduct = (event, data) => {
+const renderCompare = (data, obj) => {
+    let product = new Products;
+    let eleResult = getEle("#render-compare");
+    let name = ``;
+    let size = ``;
+    let mass = ``;
+    let loadBearing = ``;
+    let material = ``;
+    let attach = ``;
+    let sameProvince = ``;
+    let otherProvince = ``;
+    let time = ``;
+    let warrantyVoucher = ``;
+    let price = ``;
+    let dataLocalStorage = product.getLocalStorage("compare-product");
+    let info = dataLocalStorage.map((item) => {
+        return data.find(p => p.id == item);
+    })
+    info.unshift(obj);
+    info.forEach((item) => {
+        const discount = item.price * ((100 - item.promotion) / 100);
+        name += `<td>${item.name}</td>`
+        size += `<td>Dài ${item.specifications.length}cm x Rộng ${item.specifications.width}cm x Cao ${item.specifications.height}cm</td>`;
+        mass += `<td>${item.specifications.mass}</td>`;
+        loadBearing += `<td>${item.specifications.loadBearing}</td>`;
+        material += `<td>${item.specifications.material}</td>`;
+        attach += `<td>${item.specifications.attach}</td>`;
+        sameProvince += `<td>${item.specifications.deliveryTime.sameProvince}</td>`;
+        otherProvince += `<td>${item.specifications.deliveryTime.otherProvince}</td>`;
+        time += `<td>${item.specifications.insurance.time}</td>`;
+        warrantyVoucher += `<td>${item.specifications.insurance.warrantyVoucher}</td>`;
+        price += `<td class="text-danger text-center item">${fomatVnd(discount)}<a href="./view_detail.html?id=${item.id}"><button class="compare__button" data-id="4">Chi Tiết</button></a></td>`
+    });
+    let content = `<tr>
+    <th>Tên sản phẩm</th>
+    ${name}
+</tr>
+<tr>
+    <th>Kích thướt</th>
+    ${size}
+</tr>
+<tr>
+    <th>Khối lượng</th>
+    ${mass}
+</tr>
+<tr>
+    <th>Tải trọng, chịu lực </th>
+    ${loadBearing}
+</tr>
+<tr>
+    <th>Chất liệu</th>
+    ${material}
+</tr>
+<tr>
+    <th>Kèm theo</th>
+    ${attach}
+</tr>
+<tr>
+    <th>TP. Hồ Chí Minh</th>
+    ${sameProvince}
+</tr>
+<tr>
+    <th>Tỉnh khác</th>
+    ${otherProvince}
+</tr>
+<tr>
+    <th>Thời gian bảo hành</th>
+    ${time}
+</tr>
+<tr>
+    <th>Chứng từ bảo hành</th>
+    ${warrantyVoucher}
+</tr>
+<tr>
+    <th style="vertical-align: middle;">Giá tiền</th>
+    ${price}
+</tr>
+`;
+    eleResult.innerHTML = content;
+}
+const removeProduct = (event, data, idFirst) => {
     let product = new Products;
     const id = event.target.dataset.id;
+    const infoProduct = product.findItemId(idFirst, data);
     let dataLocalStorage = product.getLocalStorage("compare-product");
     const indexDel = dataLocalStorage.findIndex(item => item == id);
     console.log(indexDel, dataLocalStorage);
     dataLocalStorage.splice(indexDel, 1);
     setLocalStorage(dataLocalStorage);
     renderProductsCp(data);
+    renderCompare(data, infoProduct);
 }
 
 const renderProductsCp = (data) => {
@@ -96,33 +178,42 @@ const renderProductsCp = (data) => {
         products.innerHTML = `Không tìm thấy sản phẩm nào!`;
     }
     const deleteProduct = document.querySelectorAll(".compare__sugest--del");
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id');
     deleteProduct.forEach((item) => {
-        item.addEventListener("click", (event) => { removeProduct(event, data) });
+        item.addEventListener("click", (event) => { removeProduct(event, data, id) });
     });
 }
-const addProductCompare = (event, data) => {
+const addProductCompare = (event, data, id) => {
     let product = new Products;
     const idProduct = event.target.dataset.id;
-    const findID = data.find(item => item.id == idProduct);
-    const status = localStorage.getItem("compare-product");
-    const arrId = product.getLocalStorage("compare-product");
-    if (arrId.length == 6) {
-        return;
-    }
-    if (findID) {
-        if (!status || status == "undefined") {
-            arrId.push(idProduct);
-            setLocalStorage(arrId);
-        } else {
-            let statusId = arrId.findIndex(item => item == idProduct);
-            if (statusId == -1) {
+    const infoProduct = product.findItemId(id, data);
+    if (idProduct != id) {
+        const findID = data.find(item => item.id == idProduct);
+        const status = localStorage.getItem("compare-product");
+        const arrId = product.getLocalStorage("compare-product");
+        if (arrId.length == 6) {
+            return;
+        }
+        if (findID) {
+            if (!status || status == "undefined") {
                 arrId.push(idProduct);
                 setLocalStorage(arrId);
+            } else {
+                let statusId = arrId.findIndex(item => item == idProduct);
+                if (statusId == -1) {
+                    arrId.push(idProduct);
+                    setLocalStorage(arrId);
+                }
             }
+            renderProductsCp(data);
+            renderCompare(data, infoProduct);
+        } else {
+            console.log("lỗi không tìm thấy id trên hệ thống");
         }
-        renderProductsCp(data);
     } else {
-        console.log("lỗi không tìm thấy id trên hệ thống");
+        console.log("Sản phẩm đã tồn tại trong mục so sánh");
     }
 }
 const mainCompare = async () => {
@@ -138,7 +229,9 @@ const mainCompare = async () => {
     renderProductsCp(data.products);
     const buttonCompare = document.querySelectorAll(".compare__button");
     buttonCompare.forEach((item) => {
-        item.addEventListener("click", (event) => { addProductCompare(event, data.products) });
+        item.addEventListener("click", (event) => { addProductCompare(event, data.products, id) });
     });
+    renderCompare(data.products, infoProduct);
+
 }
 mainCompare();
