@@ -13,7 +13,7 @@ class Products {
                 const discount = item.price * ((100 - item.promotion) / 100);
                 content += `<div class="products__item">
             <div class="products__discount">
-                Giảm ${item.promotion}%
+            Discount ${item.promotion}%
             </div>
             <div class="products__img">
                 <a href="./page/view_detail.html?id=${item.id}">

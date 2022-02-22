@@ -18,7 +18,7 @@ const renderCarouselProducts = (data) => {
         const discount = item.price * ((100 - item.promotion) / 100);
         return `<div class="products__item item">
         <div class="products__discount">
-            Giảm ${item.promotion}%
+        Discount ${item.promotion}%
         </div>
         <div class="products__img">
             <a href="./view_detail.html?id=${item.id}">
@@ -39,10 +39,10 @@ const renderCarouselProducts = (data) => {
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
             </div>
-            <span>${item.evaluate.length} đánh giá</span>
+            <span>${item.evaluate.length} evaluate</span>
             <div class="products__add" data-id="${item.id}"><i class="fa fa-cart-plus"></i></div>
         </div>
-        <button class="compare__button" data-id="${item.id}">So sánh sản phẩm</button>
+        <button class="compare__button" data-id="${item.id}">Product comparison</button>
     </div>`;
     }).join("");
     eleProduct.innerHTML = contentHTML;
@@ -88,7 +88,7 @@ const renderCompare = (data, obj) => {
     info.forEach((item) => {
         const discount = item.price * ((100 - item.promotion) / 100);
         name += `<td>${item.name}</td>`
-        size += `<td>Dài ${item.specifications.length}cm x Rộng ${item.specifications.width}cm x Cao ${item.specifications.height}cm</td>`;
+        size += `<td>Length ${item.specifications.length}cm x Width ${item.specifications.width}cm x Height ${item.specifications.height}cm</td>`;
         mass += `<td>${item.specifications.mass}</td>`;
         loadBearing += `<td>${item.specifications.loadBearing}</td>`;
         material += `<td>${item.specifications.material}</td>`;
@@ -97,50 +97,50 @@ const renderCompare = (data, obj) => {
         otherProvince += `<td>${item.specifications.deliveryTime.otherProvince}</td>`;
         time += `<td>${item.specifications.insurance.time}</td>`;
         warrantyVoucher += `<td>${item.specifications.insurance.warrantyVoucher}</td>`;
-        price += `<td class="text-danger text-center item">${fomatVnd(discount)}<a href="./view_detail.html?id=${item.id}"><button class="compare__button" data-id="4">Chi Tiết</button></a></td>`
+        price += `<td class="text-danger text-center item">${fomatVnd(discount)}<a href="./view_detail.html?id=${item.id}"><button class="compare__button" data-id="4">Detail</button></a></td>`
     });
     let content = `<tr>
-    <th>Tên sản phẩm</th>
+    <th>Product's name</th>
     ${name}
 </tr>
 <tr>
-    <th>Kích thướt</th>
+    <th>Size</th>
     ${size}
 </tr>
 <tr>
-    <th>Khối lượng</th>
+    <th>Mass</th>
     ${mass}
 </tr>
 <tr>
-    <th>Tải trọng, chịu lực </th>
+    <th>Load, bearing</th>
     ${loadBearing}
 </tr>
 <tr>
-    <th>Chất liệu</th>
+    <th>Material</th>
     ${material}
 </tr>
 <tr>
-    <th>Kèm theo</th>
+    <th>Attach</th>
     ${attach}
 </tr>
 <tr>
-    <th>TP. Hồ Chí Minh</th>
+    <th>Ho Chi Minh City</th>
     ${sameProvince}
 </tr>
 <tr>
-    <th>Tỉnh khác</th>
+    <th>Other provinces</th>
     ${otherProvince}
 </tr>
 <tr>
-    <th>Thời gian bảo hành</th>
+    <th>Warranty period</th>
     ${time}
 </tr>
 <tr>
-    <th>Chứng từ bảo hành</th>
+    <th>Warranty voucher</th>
     ${warrantyVoucher}
 </tr>
 <tr>
-    <th style="vertical-align: middle;">Giá tiền</th>
+    <th style="vertical-align: middle;">Price</th>
     ${price}
 </tr>
 `;
@@ -175,7 +175,7 @@ const renderProductsCp = (data) => {
         }).join("");
         products.innerHTML = content;
     } else {
-        products.innerHTML = `Không tìm thấy sản phẩm nào!`;
+        products.innerHTML = `No product found!`;
     }
     const deleteProduct = document.querySelectorAll(".compare__sugest--del");
     const queryString = window.location.search;
@@ -210,10 +210,10 @@ const addProductCompare = (event, data, id) => {
             renderProductsCp(data);
             renderCompare(data, infoProduct);
         } else {
-            console.log("lỗi không tìm thấy id trên hệ thống");
+            console.log("Error not find ID on the system");
         }
     } else {
-        console.log("Sản phẩm đã tồn tại trong mục so sánh");
+        console.log("Products already exist in the comparison section");
     }
 }
 const mainCompare = async () => {

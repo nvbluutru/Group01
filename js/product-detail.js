@@ -21,7 +21,7 @@ const renderCarouselProducts = (data) => {
         const discount = item.price * ((100 - item.promotion) / 100);
         return `<div class="products__item item">
         <div class="products__discount">
-            Giảm ${item.promotion}%
+        Discount ${item.promotion}%
         </div>
         <div class="products__img">
             <a href="./view_detail.html?id=${item.id}">
@@ -42,10 +42,10 @@ const renderCarouselProducts = (data) => {
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
             </div>
-            <span>${item.evaluate.length} đánh giá</span>
+            <span>${item.evaluate.length} evaluate</span>
             <div class="products__add" data-id="${item.id}"><i class="fa fa-cart-plus"></i></div>
         </div>
-        <button><a href="../page/compare-product.html?id=${item.id}">So sánh sản phẩm</a></button>
+        <button><a href="../page/compare-product.html?id=${item.id}">Product comparison</a></button>
     </div>`;
     }).join("");
     eleProduct.innerHTML = contentHTML;
@@ -70,7 +70,7 @@ const renderInformation = (obj, data) => {
     const discount = obj.price * ((100 - obj.promotion) / 100);
     const product = new Products;
     document.querySelectorAll("#render-name").forEach(item => item.innerHTML = obj.name.toUpperCase());
-    document.querySelectorAll("#render-size").forEach(item => item.innerHTML = `Dài ${obj.specifications.length}cm x Rộng ${obj.specifications.width}cm x Cao ${obj.specifications.height}cm`);
+    document.querySelectorAll("#render-size").forEach(item => item.innerHTML = `Length ${obj.specifications.length}cm x Width ${obj.specifications.width}cm x Height ${obj.specifications.height}cm`);
     document.querySelectorAll("#render-mass").forEach(item => item.innerHTML = obj.specifications.mass);
     document.querySelectorAll("#render-loadBearing").forEach(item => item.innerHTML = obj.specifications.loadBearing);
     document.querySelectorAll("#render-material").forEach(item => item.innerHTML = obj.specifications.material);
@@ -109,7 +109,7 @@ const renderComment = (data) => {
         return `<div class="comment__all">
         <div class="comment__row">
             <p><span class="font">P</span>${item.name}</p>
-            <p class="time"><i class="fa fa-clock"></i> 1 ngày trước</p>
+            <p class="time"><i class="fa fa-clock"></i> 1 yesterday</p>
         </div>
 
         <div class="comment__bottom">
@@ -124,8 +124,8 @@ const renderComment = (data) => {
         <div class="ask">
             <div class="comment__mess">
                 <input class="input_first" type="input"
-                    placeholder="Xin mời để lại review về sản phẩm, Cellphone xin chân thành cảm ơn quý khách ">
-                    <button class="send"><i class="fa fa-paper-plane"></i>Gửi</button>
+                    placeholder="Please leave a review about the product, Cellphone please sincerely thank you">
+                    <button class="send"><i class="fa fa-paper-plane"></i>Send</button>
             </div>
 
         </div>
