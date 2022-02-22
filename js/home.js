@@ -1,6 +1,6 @@
 const main = async () => {
     const product = new Products;
-    const post = await fetch("https://nvbluutru.github.io/Group01/js/data/data.json");
+    const post = await fetch("https://nvbluutru.github.io/SmartStore_Group01/js/data/data.json");
     const data = await post.json();
     product.renderProducts(data.products, getEle("#products"));
     product.productsFlashSale(data.products);
